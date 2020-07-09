@@ -1,3 +1,0 @@
-/home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS/build/CMakeFiles/rebuild_cache.dir
-/home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS/build/CMakeFiles/edit_cache.dir
-/home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS/build/CMakeFiles/Mini-sumo_FreeRTOS.elf.dir
