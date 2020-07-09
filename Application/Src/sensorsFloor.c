@@ -41,15 +41,15 @@ void sensorsFloor(void const* argument){
   for(;;){
     xSemaphoreTake(irflrHandle, portMAX_DELAY);
     procesIrData(sensorFloorDataRaw, &sensorFloorData);
-    message msg = createMessage(sensorsFloorID, miniId, ALL_SENSORS, sensorFloorData);
-    xQueueSend(miniQueueHandle, &msg, 10);
+    //message msg = createMessage(sensorsFloorID, miniId, ALL_SENSORS, sensorFloorData);
+    //xQueueSend(miniQueueHandle, &msg, 10);
     /* message log = messageDinamicArray(sensorsFloorID, serialID, ARRAY, sensorFloorDataRaw, sizeof(uint16_t)*ADC_CHANELS); */
     /* if(pdPASS != xQueueSend(serialQueueHandle, &log, 0)){ */
     /*   vPortFree(log.pointer.array); */
     /* } */
     xSemaphoreGive(irdistHandle);
   }
-  
+
 }
 
 void procesIrData(const uint16_t* rawData, uint8_t* irData){
@@ -83,7 +83,7 @@ void calibrateSensors(){
     if(aux & 3){ thresold(thresholds[2], sensorFloorDataRaw[2], HIGH);}
     if(aux & 4){ thresold(thresholds[3], sensorFloorDataRaw[3], HIGH);}
     if(aux & 5){ thresold(thresholds[4], sensorFloorDataRaw[4], HIGH);}
-    
+
     }
   */
 }
@@ -97,7 +97,7 @@ void thresold(calibration irSensor, uint16_t rawValue, Type type){
     if(rawValue < irSensor.Low){irSensor.Low = rawValue;}
     break;
   }
-  
+
 }
 
 void thresoldsCalculation(calibration* irSensor, uint16_t* rawValue, Type type){

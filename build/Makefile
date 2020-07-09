@@ -1493,86 +1493,2597 @@ Middlewares/Third_Party/InvenSense/uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/uart.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/uart.c.s
 
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.o: Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.o
+Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.o: Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.o
 
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.o
-
-# target to build an object file
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.o
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.o
-
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.i: Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.i
-
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.i
-
-# target to preprocess a source file
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.i
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.i
-
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.s: Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.s
-
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.s
-
-# target to generate assembly for a file
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.s
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.c.s
-
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.o: Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.o
-
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.o
 
 # target to build an object file
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.o
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.o
+Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.o
 
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.i: Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.i
+Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.i: Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.i
 
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.i
 
 # target to preprocess a source file
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.i
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.i
+Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.i
 
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.s: Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.s
+Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.s: Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.s
 
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.s
 
 # target to generate assembly for a file
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.s
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.c.s
+Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.s
 
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.o: Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.o
+Middlewares/Third_Party/u8g2/csrc/u8g2_box.o: Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.o
 
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_box.o
 
 # target to build an object file
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.o
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.o
+Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.o
 
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.i: Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.i
+Middlewares/Third_Party/u8g2/csrc/u8g2_box.i: Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.i
 
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_box.i
 
 # target to preprocess a source file
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.i
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.i
+Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.i
 
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.s: Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.s
+Middlewares/Third_Party/u8g2/csrc/u8g2_box.s: Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.s
 
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_box.s
 
 # target to generate assembly for a file
-Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.s
-.PHONY : Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.c.s
+Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.o: Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.i: Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.s: Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_circle.o: Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_circle.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_circle.i: Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_circle.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_circle.s: Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_circle.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.o: Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.i: Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.s: Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.o: Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.i: Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.s: Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.o: Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.i: Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.s: Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_font.o: Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_font.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_font.i: Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_font.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_font.s: Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_font.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.o: Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.i: Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.s: Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.o: Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.i: Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.s: Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.o: Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.i: Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.s: Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.o: Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.i: Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.s: Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.o: Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.i: Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.s: Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_line.o: Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_line.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_line.i: Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_line.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_line.s: Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_line.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.o: Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.i: Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.s: Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_message.o: Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_message.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_message.i: Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_message.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_message.s: Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_message.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.o: Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.i: Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.s: Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.o: Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.i: Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.s: Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_setup.o: Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_setup.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_setup.i: Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_setup.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8g2_setup.s: Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_setup.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8log.o: Middlewares/Third_Party/u8g2/csrc/u8log.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8log.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8log.i: Middlewares/Third_Party/u8g2/csrc/u8log.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8log.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8log.s: Middlewares/Third_Party/u8g2/csrc/u8log.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8log.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.o: Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.i: Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.s: Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.o: Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.i: Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.s: Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.o: Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.i: Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.s: Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_byte.o: Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_byte.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_byte.i: Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_byte.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_byte.s: Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_byte.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_cad.o: Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_cad.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_cad.i: Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_cad.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_cad.s: Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_cad.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_capture.o: Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_capture.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_capture.i: Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_capture.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_capture.s: Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_capture.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.o: Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.i: Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.s: Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_display.o: Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_display.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_display.i: Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_display.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_display.s: Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_display.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.o: Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.i: Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.s: Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.o: Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.i: Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.s: Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.o: Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.i: Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.s: Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_message.o: Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_message.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_message.i: Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_message.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_message.s: Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_message.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.o: Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.i: Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.s: Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_setup.o: Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_setup.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_setup.i: Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_setup.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_setup.s: Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_setup.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_string.o: Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_string.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_string.i: Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_string.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_string.s: Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_string.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.o: Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.i: Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.s: Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.s
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.o: Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.o
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.o
+
+# target to build an object file
+Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.o
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.o
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.i: Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.i
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.i
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.i
+
+Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.s: Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.s
+
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.s
+.PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.s
 
 Src/adc.o: Src/adc.c.o
 
@@ -2093,15 +4604,294 @@ help:
 	@echo "... Middlewares/Third_Party/InvenSense/uart.o"
 	@echo "... Middlewares/Third_Party/InvenSense/uart.i"
 	@echo "... Middlewares/Third_Party/InvenSense/uart.s"
-	@echo "... Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.o"
-	@echo "... Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.i"
-	@echo "... Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306.s"
-	@echo "... Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.o"
-	@echo "... Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.i"
-	@echo "... Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_fonts.s"
-	@echo "... Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.o"
-	@echo "... Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.i"
-	@echo "... Middlewares/Third_Party/stm32-ssd1306/ssd1306/ssd1306_tests.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_box.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_box.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_box.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_circle.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_circle.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_circle.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_font.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_font.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_font.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_line.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_line.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_line.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_message.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_message.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_message.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_setup.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_setup.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8g2_setup.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8log.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8log.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8log.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_byte.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_byte.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_byte.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_cad.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_cad.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_cad.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_capture.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_capture.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_capture.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_display.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_display.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_display.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_message.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_message.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_message.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_setup.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_setup.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_setup.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_string.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_string.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_string.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.s"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.o"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.i"
+	@echo "... Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.s"
 	@echo "... Src/adc.o"
 	@echo "... Src/adc.i"
 	@echo "... Src/adc.s"

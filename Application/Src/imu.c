@@ -4,7 +4,7 @@
 #include "i2c.h"
 #include "FreeRTOS.h"
 #include "xQueSendWrap.h"
-
+#include "tim.h"
 #include "inv_mpu.h"
 #include "inv_mpu_dmp_motion_driver.h"
 #include "invensense.h"
@@ -153,7 +153,7 @@ void read_from_mpl(void){
     if (hal.report & PRINT_QUAT)
       eMPL_send_data(PACKET_DATA_QUAT, data);
   }
-  
+
   if (hal.report & PRINT_HEADING) {
     //message tx = createMessage(imuId, miniId, HEADING, 0);
     if (inv_get_sensor_type_heading(data, &accuracy, (inv_time_t*)&timestamp)){
@@ -162,7 +162,7 @@ void read_from_mpl(void){
       //xQueueSend(miniQueueHandle, &tx, 10);
     }
   }
-  
+
   if (hal.report & PRINT_ACCEL) {
     if (inv_get_sensor_type_accel(data, &accuracy,
 				  (inv_time_t*)&timestamp))
@@ -198,7 +198,7 @@ void read_from_mpl(void){
   if (hal.report & PRINT_LINEAR_ACCEL) {
     if (inv_get_sensor_type_linear_acceleration(float_data, &accuracy, (inv_time_t*)&timestamp)) {
       MPL_LOGI("Linear Accel: %7.5f,%7.5f,%7.5f\r\n",
-	       float_data[0], float_data[1], float_data[2]);                                        
+	       float_data[0], float_data[1], float_data[2]);
     }
   }
   if (hal.report & PRINT_GRAVITY_VECTOR) {
@@ -636,7 +636,7 @@ static void handle_input(char opt)
     /* Test the motion interrupt hardware feature. */
 #ifndef MPU6050 // not enabled for 6050 product
     hal.motion_int_mode = 1;
-#endif 
+#endif
     break;
 
   case 'v':
@@ -711,7 +711,7 @@ int imuInit(){
   if(inv_enable_gyro_tc() != INV_SUCCESS){
     MPL_LOGE("Could not enable gyro tc.\n");
     return -1;
-  }  
+  }
 #ifdef COMPASS_ENABLED
   /* Compass calibration algorithms. */
   inv_enable_vector_compass_cal();
@@ -788,7 +788,7 @@ int imuInit(){
   hal.next_temp_ms = 0;
   /* Compass reads are handled by scheduler. */
   get_tick_count(&timestamp);
- 
+
   dmp_memory = pvPortMalloc(sizeof(unsigned char) * 3062);
   dmp_memory[0]=0;
   //if(HAL_OK == (HAL_I2C_IsDeviceReady(&hi2c1,0x50 << 1,15,1000))){
@@ -803,7 +803,7 @@ int imuInit(){
   HAL_I2C_Master_Receive(&hi2c1, 0x50 << 1, dmp_memory, 3062, 1000000);
   taskEXIT_CRITICAL();
   //}
-  
+
   if(0 != dmp_load_motion_driver_firmware()){
     return -1;
   }
@@ -818,7 +818,7 @@ int imuInit(){
   if(0 != dmp_register_android_orient_cb(android_orient_cb)){
     return -1;
   }
-  
+
   /*
    * Known Bug -
    * DMP when enabled will sample sensor data at 200Hz and output to FIFO at the rate
@@ -954,33 +954,34 @@ void imu(void const * argument){
   //HAL_Delay(100);
   //xSemaphoreGive(imuSemHandle);
   taskENTER_CRITICAL();
-  int res = imuInit();
-  taskEXIT_CRITICAL();
-  if(res < 0){
-    while(1){MPL_LOGE("Could not initialize IMU.\r\n");}
+  //int res = imuInit();
+  if(imuInit() < 0){
+    MPL_LOGE("Could not initialize IMU.\r\n");
   }
+  taskEXIT_CRITICAL();
+
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
-  //while(1);
-  
-  for(;;){
-    //    message rx;
-    //    if(pdPASS == (xQueueReceive(imuQueueHandle, &rx, 0))){
-    /* A byte has been received via USART. See handle_input for a list of
-     * valid commands.
-     */
-    //handle_input(rx.messageUser.type);
-    // }
-    if(pdTRUE == xSemaphoreTake(imuSemHandle, portMAX_DELAY)){
-      if(imuInvProcessData()){
-	/* This function reads bias-compensated sensor data and sensor
-	 * fusion outputs from the MPL. The outputs are formatted as seen
-	 * in eMPL_outputs.c. This function only needs to be called at the
-	 * rate requested by the host.
-	 */
-	read_from_mpl();      
-      }
+//while(1);
+
+for(;;){
+  //    message rx;
+  //    if(pdPASS == (xQueueReceive(imuQueueHandle, &rx, 0))){
+  /* A byte has been received via USART. See handle_input for a list of
+   * valid commands.
+   */
+  //handle_input(rx.messageUser.type);
+  // }
+  if(pdTRUE == xSemaphoreTake(imuSemHandle, portMAX_DELAY)){
+    if(imuInvProcessData()){
+      /* This function reads bias-compensated sensor data and sensor
+       * fusion outputs from the MPL. The outputs are formatted as seen
+       * in eMPL_outputs.c. This function only needs to be called at the
+       * rate requested by the host.
+       */
+      read_from_mpl();
     }
-    //taskYIELD();
+  }
+  //taskYIELD();
   //vTaskDelay(100);
  }
 }
@@ -1004,7 +1005,7 @@ uint8_t Sensors_I2C_ReadRegister(unsigned char slave_addr, unsigned char reg_add
 void HAL_I2C_ErrorCallback(I2C_HandleTypeDef* hi2c){
   UNUSED(hi2c);
   while(1){
-    
+
   }
 }
 
@@ -1017,6 +1018,42 @@ uint32_t get_tick_count(){
   return xTaskGetTickCount();
 }
 
+uint32_t get_Delta(uint32_t old, uint32_t new){
+  uint32_t delta = 0;
+  if(new > old){
+    delta = new - old;
+  }else{
+    delta = new + (65000 - old);
+  }
+  return delta;
+}
+
+uint8_t bitDecode(uint32_t *array){
+  uint32_t first = array[0];
+  uint32_t last = array[1];
+  if(first < 370 && first > 25){
+    if(last < 100 && last > 25){
+      return 0;
+    }else if(last < 470 && last > 100){
+      return 1;
+    }
+  }
+  return 2;
+}
+
+uint8_t getAddress(uint32_t *array){
+  uint8_t address = 0;
+  uint8_t bit = 0;
+  for(uint8_t i = 0, j = 0; i < 16; i+=2, j++){
+    bit = bitDecode(&(array[i]));
+    if(bit == 2){
+      return 0;
+    }
+    address |= bit << j;
+  }
+  return address;
+}
+
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
   if(GPIO_Pin == intAcel_Pin){
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
@@ -1024,5 +1061,72 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
     if(pdPASS == (xSemaphoreGiveFromISR(imuSemHandle,&xHigherPriorityTaskWoken))){
       portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     }
+  }
+  else if(GPIO_Pin == irReceiver_Pin){
+    uint32_t lastcount = 0;
+    extern volatile uint16_t usec;
+    static volatile uint32_t count = 0;
+    static volatile int32_t state = -1;
+    static uint32_t bit[70]; //TODO optimizar arreglo
+    static uint8_t address = 0;
+    static uint8_t inverseAddress = 0;
+    static uint8_t command = 0;
+    static uint8_t inverseCommand = 0;
+    static uint8_t counter = 0;
+    __HAL_TIM_DISABLE(&htim3);
+    if(usec == 0){state=-1;}
+    switch(state){
+    case -1:
+      usec = 0; HAL_TIM_Base_Start_IT(&htim3);
+      state++;
+      counter=0;
+
+    case 0:
+      count = usec;
+      state++;
+      break;
+    case 1: //leyendo bit
+      lastcount = count;
+      count = usec;
+      //      __HAL_TIM_DISABLE(&htim3);
+      bit[counter] = get_Delta(lastcount, count);
+      if(bit[0] > 700 && bit[0] < 1100){// inicio de datos
+	counter++;
+      }else{
+	counter = 0;
+	state = 1;
+      }
+      if(counter == 2){
+	if(bit[1] < 200 || bit[1] > 500){
+	  counter = 0;
+	  state = 1;
+	}
+      }
+      if(counter > 2 && bit[counter-1] >470){
+	state=-1; bit[counter-1] = 0;
+      }
+      break;
+    }
+    if(counter >= 66){
+      counter = 0; count=0;
+      address = getAddress(&(bit[2]));
+      inverseAddress= getAddress(&(bit[18])) ^ 0xFF;
+      command = getAddress(&(bit[34]));
+      inverseCommand = getAddress(&(bit[50])) ^ 0xFF;
+      if(address == inverseAddress && command == inverseCommand){
+	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+	message tx = createMessage(irID, miniId, COMMAND, command);
+	xQueueSendFromISR(miniQueueHandle, &tx, &xHigherPriorityTaskWoken);
+	state = -1;
+	HAL_TIM_Base_Stop_IT(&htim3);
+	__HAL_TIM_SET_COUNTER(&htim3, 0);
+	usec = 0;
+	if(pdPASS == xHigherPriorityTaskWoken){
+	  portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+	}
+      }
+      state = -1;
+    }
+    __HAL_TIM_ENABLE(&htim3);
   }
 }

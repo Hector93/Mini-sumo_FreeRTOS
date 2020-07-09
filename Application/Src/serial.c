@@ -20,10 +20,10 @@ void serial(void const* argument){
   extern osSemaphoreId serialSemRxHandle;
   serialPkt rx;
   uint8_t freeMem = 0;
-  //  rx.mws.syncChar = '\n';
-  
+  rx.mws.syncChar = '\n';
+
   rx.mws.syncChar = tx.mws.syncChar = SYNCCHAR;
-  
+
   xSemaphoreGive(serialSemTxHandle);
   HAL_UART_Transmit(&huart1,(uint8_t *)"serial process active\r\n",22,200);
 
@@ -43,14 +43,14 @@ void serial(void const* argument){
 	}else{
 	  HAL_UART_Transmit_DMA(&huart1,tx.data,sizeof(serialPkt) - 1);
 	}
-	  
+
       }else{//no pude leer dato a enviar D':
 	xSemaphoreGive(serialSemTxHandle);
       }
     }
     if(pdPASS == (xSemaphoreTake(serialSemRxHandle,0))){
       if(rx.mws.syncChar == SYNCCHAR){
-	processMessage(rx.mws.msg);	
+	processMessage(rx.mws.msg);
       }else{
 	rx.mws.msg.messageUser.IdpD = serialSyncError;
 	processMessage(rx.mws.msg);
@@ -61,7 +61,7 @@ void serial(void const* argument){
     }
     taskYIELD();
   }
- 
+
 }
 
 void processMessage(message msg){
@@ -70,21 +70,21 @@ void processMessage(message msg){
     switch(msg.messageUser.IdpD){
 #ifdef aceptSERIAL
     case serialID:
-      HAL_UART_Transmit(&huart1,(uint8_t*)"serial package\r\n",15,1000);
+      //HAL_UART_Transmit(&huart1,(uint8_t*)"serial package\r\n",15,1000);
       aux = createMessage(serialID,externalControllerID,MSG_ERROR,NOTIMPLEM);
       //TODO porcesar mensaje para proceso serial
       break;
 #endif
 #ifdef aceptMOTORR
     case motorRID:
-      HAL_UART_Transmit(&huart1,(uint8_t*)"motorR package\r\n",15,1000);
+      //HAL_UART_Transmit(&huart1,(uint8_t*)"motorR package\r\n",15,1000);
       aux = createMessage(externalControllerID,motorRID,msg.messageUser.type,msg.messageUser.data);
       xQueueSend(motorRQueueHandle,&aux,100);
       break;
 #endif
 #ifdef aceptMOTORL
     case motorLID:
-      HAL_UART_Transmit(&huart1,(uint8_t*)"motorL package\r\n",15,1000);
+      //HAL_UART_Transmit(&huart1,(uint8_t*)"motorL package\r\n",15,1000);
       aux = createMessage(externalControllerID,motorLID,msg.messageUser.type,msg.messageUser.data);
       xQueueSend(motorLQueueHandle,&aux,100);
       break;

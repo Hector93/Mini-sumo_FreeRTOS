@@ -1,4 +1,3 @@
-
 #include "motors.h"
 #include "cmsis_os.h" // para retardos
 #include "gpio.h"
@@ -20,15 +19,19 @@ void motorR(const void* argument){
   motorInternalData status;
   //  message tx;
   message rx;
-  rx = createMessage(15,2,5,0);
-  
-  status.motorOpt.speed = 200;
+  //rx = createMessage(15,2,5,0);
+
+  status.motorOpt.speed = 0;
   status.motorOpt.direction = STOPEDHARD;
   status.motorOpt.channel = motorRID;
-  
+
   HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_2);
-  status = motorUpdate(motorProcessMessage(rx,status),status);
-  
+
+  HAL_GPIO_WritePin(ph_1A_GPIO_Port,ph_1A_Pin,GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(ph_1B_GPIO_Port,ph_1B_Pin,GPIO_PIN_RESET);
+  //status = motorUpdate(motorProcessMessage(rx,status),status);
+  status = motorUpdate(status,status);
+
   for(;;)
     {
       //xQueueSend(serialQueueHandle,&tx,100);
@@ -45,16 +48,19 @@ void motorL(const void* argument){
   motorInternalData status;
   //message tx;
   message rx;
-  rx = createMessage(15,3,5,0);
-  
-  status.motorOpt.speed = 100;
-  status.motorOpt.direction = FORWARD;
+  //rx = createMessage(15,3,5,0);
 
+  status.motorOpt.speed = 0;
+  status.motorOpt.direction = STOPEDHARD;
   status.motorOpt.channel = motorLID;
-  
+
+
   HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_3);
-  status = motorUpdate(motorProcessMessage(rx,status),status);
-  
+  HAL_GPIO_WritePin(ph_2A_GPIO_Port,ph_2A_Pin,GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(ph_2B_GPIO_Port,ph_2B_Pin,GPIO_PIN_RESET);
+  //status = motorUpdate(motorProcessMessage(rx,status),status);
+  status = motorUpdate(status,status);
+
   for(;;)
     {
       //xQueueSend(serialQueueHandle,&tx,100);
@@ -63,8 +69,8 @@ void motorL(const void* argument){
       if(pdPASS ==(xQueueReceive(motorLQueueHandle,&rx,10))){
 	status = motorUpdate(motorProcessMessage(rx,status),status);
       }
-      
-      
+
+
     }
 }
 
@@ -98,15 +104,15 @@ motorInternalData motorProcessMessage(message msg,motorInternalData data){
     return data;
   case getStatus:
     response = createMessage(data.motorOpt.channel,msg.messageUser.IdpO,getStatus,data.motorData);
-    xQueueSend(serialQueueHandle,&response,10);    
+    xQueueSend(serialQueueHandle,&response,10);
     return data;
   case getSpeed:
     response = createMessage(data.motorOpt.channel,msg.messageUser.IdpO,getSpeed,data.motorData & 0xFF00);
-    xQueueSend(serialQueueHandle,&response,10);    
+    xQueueSend(serialQueueHandle,&response,10);
     return data;
   case getDirection:
     response = createMessage(data.motorOpt.channel,msg.messageUser.IdpO,getDirection,data.motorData & 0x00FF);
-    xQueueSend(serialQueueHandle,&response,10);    
+    xQueueSend(serialQueueHandle,&response,10);
     return data;
   case test:
     //llamar a funcion de prueba
@@ -116,23 +122,14 @@ motorInternalData motorProcessMessage(message msg,motorInternalData data){
 }
 
 motorInternalData motorUpdate(motorInternalData newData, motorInternalData prevData){
-  if(newData.motorOpt.channel == prevData.motorOpt.channel){
-    if (newData.motorOpt.speed != prevData.motorOpt.speed){
-      motorSpeedInternal(newData);
-    }
-    if(newData.motorOpt.direction != prevData.motorOpt.direction){
-      motorDirectionInternal(newData);
-    }
-    return newData;
-  }else{
-    return prevData;
-  }
+  motorDirectionInternal(newData);
+  return newData;
 }
 
 void motorSpeedInternal(motorInternalData data){
- 
+
   HAL_TIM_SetPWM(data.motorOpt.speed,data.motorOpt.channel);
-}    
+}
 
 
 void motorDirectionInternal(motorInternalData data){
@@ -146,6 +143,7 @@ void motorDirectionInternal(motorInternalData data){
       HAL_GPIO_WritePin(ph_2A_GPIO_Port,ph_2A_Pin,GPIO_PIN_SET);
       HAL_GPIO_WritePin(ph_2B_GPIO_Port,ph_2B_Pin,GPIO_PIN_RESET);
     }
+    motorSpeedInternal(data);
     break;
   case BACKWARDS:
     //    HAL_UART_Transmit(&huart1,"backwards motor \r\n",13,10);
@@ -156,8 +154,11 @@ void motorDirectionInternal(motorInternalData data){
       HAL_GPIO_WritePin(ph_2A_GPIO_Port,ph_2A_Pin,GPIO_PIN_RESET);
       HAL_GPIO_WritePin(ph_2B_GPIO_Port,ph_2B_Pin,GPIO_PIN_SET);
     }
+    motorSpeedInternal(data);
     break;
   case STOPED:
+    data.motorOpt.speed = 0;
+    motorSpeedInternal(data);
     break;
   case STOPEDHARD:    // poner pwm de canal a 100% y poner en cero los dos pines del motor
     if(data.motorOpt.channel == motorRID){
@@ -167,6 +168,8 @@ void motorDirectionInternal(motorInternalData data){
       HAL_GPIO_WritePin(ph_2A_GPIO_Port,ph_2A_Pin,GPIO_PIN_RESET);
       HAL_GPIO_WritePin(ph_2B_GPIO_Port,ph_2B_Pin,GPIO_PIN_RESET);
     }
+    data.motorOpt.speed = 0;
+    motorSpeedInternal(data);
     break;
   }
 }
@@ -183,4 +186,3 @@ uint16_t motorSpeed(uint8_t speed){
 uint16_t motorDirection(uint8_t direction){
   return createMotorData(0,direction);
 }
-

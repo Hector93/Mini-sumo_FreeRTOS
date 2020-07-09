@@ -9,6 +9,7 @@
 #include "sensorsFloor.h"
 #include "motors.h"
 #include "fuzzyWrapper.h"
+#include "tim.h"
 
 volatile long imuHeading = 0;
 sensorDistData distSensorData;
@@ -20,9 +21,11 @@ typedef struct {
   uint8_t irFloor;
   sensorDistData irDist;
   int8_t direction;
+  uint8_t irCommand;
 }miniStatus;
 
 void miniprocessMessage(message *rx);
+void irMessage(message *rx);
 void imuMessage(message *rx);
 void sensorsFloorMsg(message *rx);
 void sensorsDistMsg(message *rx);
@@ -34,38 +37,17 @@ volatile miniStatus status;
 
 void mini(void const * argument){
   UNUSED(argument);
+  HAL_GPIO_WritePin(buzer_GPIO_Port, buzer_Pin, GPIO_PIN_RESET);
+  HAL_TIM_Base_Start_IT(&htim3);
   //Fuzzy* c = newFuzzy();
-  //message rx, tx;
-  //uint8_t vel = 255;
+  message rx, tx;
+  uint8_t vel = 255;
   for(;;){
-    /* if(pdPASS == (xQueueReceive(miniQueueHandle, &rx, 100))){ */
-    /*   miniprocessMessage(&rx); */
-    /*   if(GPIO_PIN_SET == HAL_GPIO_ReadPin(go_mini_GPIO_Port, go_mini_Pin)){ */
-    /* 	// if this is valid the robot can move */
-    /* 	if(status.irFloor > 0){ */
-    /* 	  vel = 255; */
-    /* 	  tx = createMessage(miniId, motorLID, startMotor, createMotorData(vel, BACKWARDS)); */
-    /* 	  xQueueSend(motorLQueueHandle, &tx, 50); */
-    /* 	  tx = createMessage(miniId, motorRID, startMotor, createMotorData(vel, BACKWARDS)); */
-    /* 	  xQueueSend(motorRQueueHandle, &tx, 50); */
-
-    /* 	}else{ */
-    /* 	  vel = 255; */
-    /* 	  tx = createMessage(miniId, motorLID, startMotor, createMotorData(vel, FORWARD)); */
-    /* 	  xQueueSend(motorLQueueHandle, &tx, 50); */
-    /* 	  tx = createMessage(miniId, motorRID, startMotor, createMotorData(vel, FORWARD)); */
-    /* 	  xQueueSend(motorRQueueHandle, &tx, 50); */
-    /* 	} */
-
-    /*   }else{//stop the robot */
-    /* 	tx = createMessage(miniId, motorLID, stopHard, 0); */
-    /* 	xQueueSend(motorLQueueHandle, &tx, 50); */
-    /* 	tx = createMessage(miniId, motorRID, stopHard, 0); */
-    /* 	xQueueSend(motorRQueueHandle, &tx, 50); */
-    /*   } */
-    /* }     */
+    if(pdPASS == (xQueueReceive(miniQueueHandle, &rx, 100))){
+      miniprocessMessage(&rx);
+    }
     portYIELD();
-  }  
+  }
 }
 
 void controller(){
@@ -80,7 +62,7 @@ void controller(){
   //acel 23
 
 
-  
+
 }
 
 void miniprocessMessage(message *rx){
@@ -94,9 +76,11 @@ void miniprocessMessage(message *rx){
   case imuId:
     imuMessage(rx);
     break;
+  case irID:
+    irMessage(rx);
   default:
     break;
-    
+
   }
 }
 
@@ -106,6 +90,14 @@ void motorControl(uint8_t motorLType, uint16_t motorL, uint8_t motorRType, uint1
   xQueueSend(motorLQueueHandle, &tx, 50);
   tx = createMessage(miniId, motorRID, motorRType, motorR);
   xQueueSend(motorRQueueHandle, &tx, 50);
+}
+
+void irMessage(message *rx){
+  switch(rx->messageUser.type){
+  case COMMAND:
+    status.irCommand = rx->messageUser.data;
+    break;
+  }
 }
 
 void imuMessage(message *rx){

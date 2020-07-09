@@ -9,7 +9,8 @@
 #define __IMU_H
 
 #include "cmsis_os.h"
-#define imuId 6
+#include "Ids.h"
+//#define imuId 6
 
 //type of message
 #define START_IMU     1

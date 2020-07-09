@@ -1,7 +1,7 @@
 /**
 ******************************************************************************
 * File Name          : motors.h
-* Description        : function definitions for the two dc motors 
+* Description        : function definitions for the two dc motors
 ******************************************************************************
 **/
 
@@ -15,16 +15,17 @@ extern "C" {
   //#include "gpio.h"
 #include "serial.h"
 #include "stdint.h"
+#include "Ids.h"
 
-#define motorRID 2
-#define motorLID 3
+  //#define motorRID 2
+  //#define motorLID 3
 
   //motor directions
 #define STOPED     0
 #define STOPEDHARD 1
 #define FORWARD    2
 #define BACKWARDS  3
-  
+
   //type definitions
 #define motorError   0 //partial(only responds 0)
 #define stopHard     1 //complete
@@ -36,7 +37,7 @@ extern "C" {
 #define getSpeed     7 //complete
 #define getDirection 8 //complete
 #define test         9
-  
+
   typedef union{
     uint16_t motorData;
     struct {
@@ -45,10 +46,10 @@ extern "C" {
       uint8_t channel;
     }motorOpt;
   }motorInternalData;
-  
+
   extern osMessageQId motorLQueueHandle;
   extern osMessageQId motorRQueueHandle;
-  
+
   void motorR(void const* argument); //funcion que controla el proceso, esta definida en freertos.c
   void motorL(void const* argument); //funcion que controla el proceso, esta definida en freertos.c
   uint16_t map(uint8_t speed);
@@ -57,6 +58,3 @@ extern "C" {
   uint16_t motorSpeed(uint8_t speed);
   uint16_t motorDirection(uint8_t direction);
 #endif
-  
-  
-  

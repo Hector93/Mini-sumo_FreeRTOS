@@ -1,18 +1,18 @@
 # BSD 2-Clause License
-# 
+#
 # Copyright (c) 2017, Alexander Lutsai <s.lyra@ya.ru>
 # All rights reserved.
-# 
+#
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
-# 
+#
 # * Redistributions of source code must retain the above copyright notice, this
 #   list of conditions and the following disclaimer.
-# 
+#
 # * Redistributions in binary form must reproduce the above copyright notice,
 #   this list of conditions and the following disclaimer in the documentation
 #   and/or other materials provided with the distribution.
-# 
+#
 # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 # AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 # IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -37,7 +37,7 @@
 cmake_minimum_required (VERSION 2.6)
 
 # USER REGION BEGIN
-set(OPT "-Os")
+set(OPT "-O3")
 #set(USER_LINKER_FLAGS "-u _printf_float -Wl,--print-memory-usage")
 set(USER_LINKER_FLAGS "-u _printf_float -specs=nano.specs -Wl,--print-memory-usage ")
 set(USER_CFLAGS "-Wall -Wextra -Wdouble-promotion -fmessage-length=0 -DUSE_STDPERIPH_DRIVER -DEMPL -DUSE_DMP -DMPU6050 -DMPL_LOG_NDEBUG=1 -DEMPL_TARGET_STM32F4 -DREMOVE_LOGGING -DPRINT_IMU_DATA -DPRINT_IMU_QUAT -DSTM32F1 -DSSD1306_USE_I2C -I\"Middlewares/Third_Party/InvenSense/core/driver/include\" -I\"Middlewares/Third_Party/InvenSense/core/driver/eMPL\" -I\"Middlewares/Third_Party/InvenSense/core/driver/stm32L\" -I\"Middlewares/Third_Party/InvenSense/core/mpl\" -I\"Middlewares/Third_Party/InvenSense/core/mllite\" -I\"Middlewares/Third_Party/InvenSense/core/mpl\"")

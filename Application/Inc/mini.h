@@ -8,7 +8,8 @@
 #ifndef __MINI_H
 #define __MINI_H
 #include "cmsis_os.h"
-#define miniId 7
+#include "Ids.h"
+//#define miniId 7
 
 extern osMessageQId miniQueueHandle;
 extern osSemaphoreId miniSemHandle;

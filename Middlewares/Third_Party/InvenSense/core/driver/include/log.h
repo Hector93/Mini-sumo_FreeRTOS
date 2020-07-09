@@ -123,10 +123,10 @@ extern "C" {
 #ifdef _WIN32
 #define MPL_LOGV(fmt, ...)						\
 	do {								\
-        __pragma (warning(suppress : 4127 )) \
+	__pragma (warning(suppress : 4127 )) \
 		if (0)							\
 			MPL_LOG(LOG_VERBOSE, MPL_LOG_TAG, fmt, ##__VA_ARGS__);\
-            __pragma (warning(suppress : 4127 )) \
+	    __pragma (warning(suppress : 4127 )) \
     } while (0)
 #else
 #define MPL_LOGV(fmt, ...)						\
@@ -349,7 +349,7 @@ static inline void __print_result_location(int result,
     do {								\
 		__print_result_location((int)(condition), __FILE__,	\
 					__func__, __LINE__);		\
-        __pragma (warning(suppress : 4127 )) \
+	__pragma (warning(suppress : 4127 )) \
 	} while (0)
 #else
 #define LOG_RESULT_LOCATION(condition) \
@@ -362,8 +362,8 @@ static inline void __print_result_location(int result,
 
 #define INV_ERROR_CHECK(r_1329) \
     if (r_1329) { \
-        LOG_RESULT_LOCATION(r_1329); \
-        return r_1329; \
+	LOG_RESULT_LOCATION(r_1329); \
+	return r_1329; \
     }
 
 #ifdef __cplusplus
