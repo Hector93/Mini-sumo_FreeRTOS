@@ -68,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hector/Documents/Robotica/firmware/borrar/minisumo128k
+CMAKE_SOURCE_DIR = /home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hector/Documents/Robotica/firmware/borrar/minisumo128k/build
+CMAKE_BINARY_DIR = /home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hector/Documents/Robotica/firmware/borrar/minisumo128k/build/CMakeFiles /home/hector/Documents/Robotica/firmware/borrar/minisumo128k/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS/build/CMakeFiles /home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hector/Documents/Robotica/firmware/borrar/minisumo128k/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named minisumo128k.elf
+# Target rules for targets named Mini-sumo_FreeRTOS.elf
 
 # Build rule for target.
-minisumo128k.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minisumo128k.elf
-.PHONY : minisumo128k.elf
+Mini-sumo_FreeRTOS.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mini-sumo_FreeRTOS.elf
+.PHONY : Mini-sumo_FreeRTOS.elf
 
 # fast build rule for target.
-minisumo128k.elf/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/build
-.PHONY : minisumo128k.elf/fast
+Mini-sumo_FreeRTOS.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build
+.PHONY : Mini-sumo_FreeRTOS.elf/fast
 
 Application/Src/imu.o: Application/Src/imu.c.o
 
@@ -149,7 +149,7 @@ Application/Src/imu.o: Application/Src/imu.c.o
 
 # target to build an object file
 Application/Src/imu.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/imu.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/imu.c.o
 .PHONY : Application/Src/imu.c.o
 
 Application/Src/imu.i: Application/Src/imu.c.i
@@ -158,7 +158,7 @@ Application/Src/imu.i: Application/Src/imu.c.i
 
 # target to preprocess a source file
 Application/Src/imu.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/imu.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/imu.c.i
 .PHONY : Application/Src/imu.c.i
 
 Application/Src/imu.s: Application/Src/imu.c.s
@@ -167,7 +167,7 @@ Application/Src/imu.s: Application/Src/imu.c.s
 
 # target to generate assembly for a file
 Application/Src/imu.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/imu.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/imu.c.s
 .PHONY : Application/Src/imu.c.s
 
 Application/Src/led.o: Application/Src/led.c.o
@@ -176,7 +176,7 @@ Application/Src/led.o: Application/Src/led.c.o
 
 # target to build an object file
 Application/Src/led.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/led.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/led.c.o
 .PHONY : Application/Src/led.c.o
 
 Application/Src/led.i: Application/Src/led.c.i
@@ -185,7 +185,7 @@ Application/Src/led.i: Application/Src/led.c.i
 
 # target to preprocess a source file
 Application/Src/led.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/led.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/led.c.i
 .PHONY : Application/Src/led.c.i
 
 Application/Src/led.s: Application/Src/led.c.s
@@ -194,7 +194,7 @@ Application/Src/led.s: Application/Src/led.c.s
 
 # target to generate assembly for a file
 Application/Src/led.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/led.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/led.c.s
 .PHONY : Application/Src/led.c.s
 
 Application/Src/message.o: Application/Src/message.c.o
@@ -203,7 +203,7 @@ Application/Src/message.o: Application/Src/message.c.o
 
 # target to build an object file
 Application/Src/message.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/message.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/message.c.o
 .PHONY : Application/Src/message.c.o
 
 Application/Src/message.i: Application/Src/message.c.i
@@ -212,7 +212,7 @@ Application/Src/message.i: Application/Src/message.c.i
 
 # target to preprocess a source file
 Application/Src/message.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/message.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/message.c.i
 .PHONY : Application/Src/message.c.i
 
 Application/Src/message.s: Application/Src/message.c.s
@@ -221,7 +221,7 @@ Application/Src/message.s: Application/Src/message.c.s
 
 # target to generate assembly for a file
 Application/Src/message.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/message.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/message.c.s
 .PHONY : Application/Src/message.c.s
 
 Application/Src/mini.o: Application/Src/mini.c.o
@@ -230,7 +230,7 @@ Application/Src/mini.o: Application/Src/mini.c.o
 
 # target to build an object file
 Application/Src/mini.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/mini.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/mini.c.o
 .PHONY : Application/Src/mini.c.o
 
 Application/Src/mini.i: Application/Src/mini.c.i
@@ -239,7 +239,7 @@ Application/Src/mini.i: Application/Src/mini.c.i
 
 # target to preprocess a source file
 Application/Src/mini.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/mini.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/mini.c.i
 .PHONY : Application/Src/mini.c.i
 
 Application/Src/mini.s: Application/Src/mini.c.s
@@ -248,7 +248,7 @@ Application/Src/mini.s: Application/Src/mini.c.s
 
 # target to generate assembly for a file
 Application/Src/mini.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/mini.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/mini.c.s
 .PHONY : Application/Src/mini.c.s
 
 Application/Src/motors.o: Application/Src/motors.c.o
@@ -257,7 +257,7 @@ Application/Src/motors.o: Application/Src/motors.c.o
 
 # target to build an object file
 Application/Src/motors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/motors.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/motors.c.o
 .PHONY : Application/Src/motors.c.o
 
 Application/Src/motors.i: Application/Src/motors.c.i
@@ -266,7 +266,7 @@ Application/Src/motors.i: Application/Src/motors.c.i
 
 # target to preprocess a source file
 Application/Src/motors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/motors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/motors.c.i
 .PHONY : Application/Src/motors.c.i
 
 Application/Src/motors.s: Application/Src/motors.c.s
@@ -275,7 +275,7 @@ Application/Src/motors.s: Application/Src/motors.c.s
 
 # target to generate assembly for a file
 Application/Src/motors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/motors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/motors.c.s
 .PHONY : Application/Src/motors.c.s
 
 Application/Src/oled.o: Application/Src/oled.c.o
@@ -284,7 +284,7 @@ Application/Src/oled.o: Application/Src/oled.c.o
 
 # target to build an object file
 Application/Src/oled.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/oled.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/oled.c.o
 .PHONY : Application/Src/oled.c.o
 
 Application/Src/oled.i: Application/Src/oled.c.i
@@ -293,7 +293,7 @@ Application/Src/oled.i: Application/Src/oled.c.i
 
 # target to preprocess a source file
 Application/Src/oled.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/oled.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/oled.c.i
 .PHONY : Application/Src/oled.c.i
 
 Application/Src/oled.s: Application/Src/oled.c.s
@@ -302,7 +302,7 @@ Application/Src/oled.s: Application/Src/oled.c.s
 
 # target to generate assembly for a file
 Application/Src/oled.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/oled.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/oled.c.s
 .PHONY : Application/Src/oled.c.s
 
 Application/Src/sensorsDist.o: Application/Src/sensorsDist.c.o
@@ -311,7 +311,7 @@ Application/Src/sensorsDist.o: Application/Src/sensorsDist.c.o
 
 # target to build an object file
 Application/Src/sensorsDist.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/sensorsDist.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/sensorsDist.c.o
 .PHONY : Application/Src/sensorsDist.c.o
 
 Application/Src/sensorsDist.i: Application/Src/sensorsDist.c.i
@@ -320,7 +320,7 @@ Application/Src/sensorsDist.i: Application/Src/sensorsDist.c.i
 
 # target to preprocess a source file
 Application/Src/sensorsDist.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/sensorsDist.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/sensorsDist.c.i
 .PHONY : Application/Src/sensorsDist.c.i
 
 Application/Src/sensorsDist.s: Application/Src/sensorsDist.c.s
@@ -329,7 +329,7 @@ Application/Src/sensorsDist.s: Application/Src/sensorsDist.c.s
 
 # target to generate assembly for a file
 Application/Src/sensorsDist.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/sensorsDist.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/sensorsDist.c.s
 .PHONY : Application/Src/sensorsDist.c.s
 
 Application/Src/sensorsFloor.o: Application/Src/sensorsFloor.c.o
@@ -338,7 +338,7 @@ Application/Src/sensorsFloor.o: Application/Src/sensorsFloor.c.o
 
 # target to build an object file
 Application/Src/sensorsFloor.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/sensorsFloor.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/sensorsFloor.c.o
 .PHONY : Application/Src/sensorsFloor.c.o
 
 Application/Src/sensorsFloor.i: Application/Src/sensorsFloor.c.i
@@ -347,7 +347,7 @@ Application/Src/sensorsFloor.i: Application/Src/sensorsFloor.c.i
 
 # target to preprocess a source file
 Application/Src/sensorsFloor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/sensorsFloor.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/sensorsFloor.c.i
 .PHONY : Application/Src/sensorsFloor.c.i
 
 Application/Src/sensorsFloor.s: Application/Src/sensorsFloor.c.s
@@ -356,7 +356,7 @@ Application/Src/sensorsFloor.s: Application/Src/sensorsFloor.c.s
 
 # target to generate assembly for a file
 Application/Src/sensorsFloor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/sensorsFloor.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/sensorsFloor.c.s
 .PHONY : Application/Src/sensorsFloor.c.s
 
 Application/Src/serial.o: Application/Src/serial.c.o
@@ -365,7 +365,7 @@ Application/Src/serial.o: Application/Src/serial.c.o
 
 # target to build an object file
 Application/Src/serial.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/serial.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/serial.c.o
 .PHONY : Application/Src/serial.c.o
 
 Application/Src/serial.i: Application/Src/serial.c.i
@@ -374,7 +374,7 @@ Application/Src/serial.i: Application/Src/serial.c.i
 
 # target to preprocess a source file
 Application/Src/serial.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/serial.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/serial.c.i
 .PHONY : Application/Src/serial.c.i
 
 Application/Src/serial.s: Application/Src/serial.c.s
@@ -383,7 +383,7 @@ Application/Src/serial.s: Application/Src/serial.c.s
 
 # target to generate assembly for a file
 Application/Src/serial.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Application/Src/serial.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Application/Src/serial.c.s
 .PHONY : Application/Src/serial.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.o
@@ -392,7 +392,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o: Drivers/STM32F1xx_HAL_Driver/S
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i
@@ -401,7 +401,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i: Drivers/STM32F1xx_HAL_Driver/S
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
@@ -410,7 +410,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s: Drivers/STM32F1xx_HAL_Driver/S
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.o
@@ -419,7 +419,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o: Drivers/STM32F1xx_HAL_Driv
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
@@ -428,7 +428,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i: Drivers/STM32F1xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
@@ -437,7 +437,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s: Drivers/STM32F1xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.o
@@ -446,7 +446,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o: Drivers/STM32F1xx_HAL_D
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
@@ -455,7 +455,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i: Drivers/STM32F1xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
@@ -464,7 +464,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s: Drivers/STM32F1xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.o
@@ -473,7 +473,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o: Drivers/STM32F1xx_HAL_D
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i
@@ -482,7 +482,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.i: Drivers/STM32F1xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s
@@ -491,7 +491,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.s: Drivers/STM32F1xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.o
@@ -500,7 +500,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o: Drivers/STM32F1xx_HAL_Driv
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i
@@ -509,7 +509,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.i: Drivers/STM32F1xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s
@@ -518,7 +518,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.s: Drivers/STM32F1xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.o
@@ -527,7 +527,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o: Drivers/STM32F1xx_HAL_Dri
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i
@@ -536,7 +536,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.i: Drivers/STM32F1xx_HAL_Dri
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s
@@ -545,7 +545,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.s: Drivers/STM32F1xx_HAL_Dri
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.o
@@ -554,7 +554,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o: Drivers/STM32F1xx_HAL_Dr
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i
@@ -563,7 +563,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.i: Drivers/STM32F1xx_HAL_Dr
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s
@@ -572,7 +572,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.s: Drivers/STM32F1xx_HAL_Dr
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.o
@@ -581,7 +581,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o: Drivers/STM32F1xx_HAL
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i
@@ -590,7 +590,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.i: Drivers/STM32F1xx_HAL
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s
@@ -599,7 +599,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.s: Drivers/STM32F1xx_HAL
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.o
@@ -608,7 +608,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o: Drivers/STM32F1xx_HAL_Dri
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i
@@ -617,7 +617,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.i: Drivers/STM32F1xx_HAL_Dri
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s
@@ -626,7 +626,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.s: Drivers/STM32F1xx_HAL_Dri
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.o
@@ -635,7 +635,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o: Drivers/STM32F1xx_HAL_
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i
@@ -644,7 +644,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.i: Drivers/STM32F1xx_HAL_
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
@@ -653,7 +653,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.s: Drivers/STM32F1xx_HAL_
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.o
@@ -662,7 +662,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o: Drivers/STM32F1xx_HAL_Driv
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
@@ -671,7 +671,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i: Drivers/STM32F1xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
@@ -680,7 +680,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s: Drivers/STM32F1xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.o
@@ -689,7 +689,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o: Drivers/STM32F1xx_HAL_Driv
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i
@@ -698,7 +698,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.i: Drivers/STM32F1xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s
@@ -707,7 +707,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.s: Drivers/STM32F1xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.o
@@ -716,7 +716,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o: Drivers/STM32F1xx_HAL_Driv
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i
@@ -725,7 +725,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.i: Drivers/STM32F1xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s
@@ -734,7 +734,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.s: Drivers/STM32F1xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.o
@@ -743,7 +743,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o: Drivers/STM32F1xx_HAL_D
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i
@@ -752,7 +752,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.i: Drivers/STM32F1xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s
@@ -761,7 +761,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.s: Drivers/STM32F1xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.o
@@ -770,7 +770,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o: Drivers/STM32F1xx_HAL_Driv
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i
@@ -779,7 +779,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.i: Drivers/STM32F1xx_HAL_Driv
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s
@@ -788,7 +788,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.s: Drivers/STM32F1xx_HAL_Driv
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.o
@@ -797,7 +797,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o: Drivers/STM32F1xx_HAL_D
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i
@@ -806,7 +806,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.i: Drivers/STM32F1xx_HAL_D
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
@@ -815,7 +815,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.s: Drivers/STM32F1xx_HAL_D
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.o
@@ -824,7 +824,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o: Drivers/STM32F1xx_HAL_Dri
 
 # target to build an object file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.o
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.o
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
@@ -833,7 +833,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i: Drivers/STM32F1xx_HAL_Dri
 
 # target to preprocess a source file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
@@ -842,7 +842,7 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s: Drivers/STM32F1xx_HAL_Dri
 
 # target to generate assembly for a file
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o
@@ -851,7 +851,7 @@ Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o: Middlewares/Third
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
@@ -860,7 +860,7 @@ Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i: Middlewares/Third
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
@@ -869,7 +869,7 @@ Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s: Middlewares/Third
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/croutine.o: Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o
@@ -878,7 +878,7 @@ Middlewares/Third_Party/FreeRTOS/Source/croutine.o: Middlewares/Third_Party/Free
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/croutine.i: Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
@@ -887,7 +887,7 @@ Middlewares/Third_Party/FreeRTOS/Source/croutine.i: Middlewares/Third_Party/Free
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/croutine.s: Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
@@ -896,7 +896,7 @@ Middlewares/Third_Party/FreeRTOS/Source/croutine.s: Middlewares/Third_Party/Free
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/event_groups.o: Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o
@@ -905,7 +905,7 @@ Middlewares/Third_Party/FreeRTOS/Source/event_groups.o: Middlewares/Third_Party/
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/event_groups.i: Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
@@ -914,7 +914,7 @@ Middlewares/Third_Party/FreeRTOS/Source/event_groups.i: Middlewares/Third_Party/
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/event_groups.s: Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
@@ -923,7 +923,7 @@ Middlewares/Third_Party/FreeRTOS/Source/event_groups.s: Middlewares/Third_Party/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/list.o: Middlewares/Third_Party/FreeRTOS/Source/list.c.o
@@ -932,7 +932,7 @@ Middlewares/Third_Party/FreeRTOS/Source/list.o: Middlewares/Third_Party/FreeRTOS
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/list.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/list.i: Middlewares/Third_Party/FreeRTOS/Source/list.c.i
@@ -941,7 +941,7 @@ Middlewares/Third_Party/FreeRTOS/Source/list.i: Middlewares/Third_Party/FreeRTOS
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/list.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/list.s: Middlewares/Third_Party/FreeRTOS/Source/list.c.s
@@ -950,7 +950,7 @@ Middlewares/Third_Party/FreeRTOS/Source/list.s: Middlewares/Third_Party/FreeRTOS
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/list.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o: Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.o
@@ -959,7 +959,7 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o: Middlewares
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.i: Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i
@@ -968,7 +968,7 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.i: Middlewares
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.s: Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.s
@@ -977,7 +977,7 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.s: Middlewares
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o: Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o
@@ -986,7 +986,7 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o: Middlewares/T
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.i: Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
@@ -995,7 +995,7 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.i: Middlewares/T
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.s: Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
@@ -1004,7 +1004,7 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.s: Middlewares/T
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/queue.o: Middlewares/Third_Party/FreeRTOS/Source/queue.c.o
@@ -1013,7 +1013,7 @@ Middlewares/Third_Party/FreeRTOS/Source/queue.o: Middlewares/Third_Party/FreeRTO
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/queue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/queue.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/queue.i: Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
@@ -1022,7 +1022,7 @@ Middlewares/Third_Party/FreeRTOS/Source/queue.i: Middlewares/Third_Party/FreeRTO
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/queue.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/queue.s: Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
@@ -1031,7 +1031,7 @@ Middlewares/Third_Party/FreeRTOS/Source/queue.s: Middlewares/Third_Party/FreeRTO
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/queue.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o
@@ -1040,7 +1040,7 @@ Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o: Middlewares/Third_Party
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.i: Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
@@ -1049,7 +1049,7 @@ Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.i: Middlewares/Third_Party
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.s: Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
@@ -1058,7 +1058,7 @@ Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.s: Middlewares/Third_Party
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/tasks.o: Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o
@@ -1067,7 +1067,7 @@ Middlewares/Third_Party/FreeRTOS/Source/tasks.o: Middlewares/Third_Party/FreeRTO
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/tasks.i: Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
@@ -1076,7 +1076,7 @@ Middlewares/Third_Party/FreeRTOS/Source/tasks.i: Middlewares/Third_Party/FreeRTO
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/tasks.s: Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
@@ -1085,7 +1085,7 @@ Middlewares/Third_Party/FreeRTOS/Source/tasks.s: Middlewares/Third_Party/FreeRTO
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s
 
 Middlewares/Third_Party/FreeRTOS/Source/timers.o: Middlewares/Third_Party/FreeRTOS/Source/timers.c.o
@@ -1094,7 +1094,7 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.o: Middlewares/Third_Party/FreeRT
 
 # target to build an object file
 Middlewares/Third_Party/FreeRTOS/Source/timers.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.o
 
 Middlewares/Third_Party/FreeRTOS/Source/timers.i: Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
@@ -1103,7 +1103,7 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.i: Middlewares/Third_Party/FreeRT
 
 # target to preprocess a source file
 Middlewares/Third_Party/FreeRTOS/Source/timers.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.i
 
 Middlewares/Third_Party/FreeRTOS/Source/timers.s: Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
@@ -1112,7 +1112,7 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.s: Middlewares/Third_Party/FreeRT
 
 # target to generate assembly for a file
 Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.o: Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.o
@@ -1121,7 +1121,7 @@ Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.o: Middlewares/Third
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.o
 
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.i: Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.i
@@ -1130,7 +1130,7 @@ Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.i: Middlewares/Third
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.i
 
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.s: Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.s
@@ -1139,7 +1139,7 @@ Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.s: Middlewares/Third
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu.c.s
 
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.o: Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.o
@@ -1148,7 +1148,7 @@ Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.o:
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.o
 
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.i: Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.i
@@ -1157,7 +1157,7 @@ Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.i:
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.i
 
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.s: Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.s
@@ -1166,7 +1166,7 @@ Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.s:
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/driver/eMPL/inv_mpu_dmp_motion_driver.c.s
 
 Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.o: Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.o
@@ -1175,7 +1175,7 @@ Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.o: Middlewares/T
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.o
 
 Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.i: Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.i
@@ -1184,7 +1184,7 @@ Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.i: Middlewares/T
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.i
 
 Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.s: Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.s
@@ -1193,7 +1193,7 @@ Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.s: Middlewares/T
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/driver/stm32L/log_stm32.c.s
 
 Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.o: Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.o
@@ -1202,7 +1202,7 @@ Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.o: Middlewares/Thi
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.o
 
 Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.i: Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.i
@@ -1211,7 +1211,7 @@ Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.i: Middlewares/Thi
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.i
 
 Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.s: Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.s
@@ -1220,7 +1220,7 @@ Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.s: Middlewares/Thi
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/eMPL-hal/eMPL_outputs.c.s
 
 Middlewares/Third_Party/InvenSense/core/mllite/data_builder.o: Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.o
@@ -1229,7 +1229,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/data_builder.o: Middlewares/Third
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.o
 
 Middlewares/Third_Party/InvenSense/core/mllite/data_builder.i: Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.i
@@ -1238,7 +1238,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/data_builder.i: Middlewares/Third
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.i
 
 Middlewares/Third_Party/InvenSense/core/mllite/data_builder.s: Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.s
@@ -1247,7 +1247,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/data_builder.s: Middlewares/Third
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/data_builder.c.s
 
 Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.o: Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.o
@@ -1256,7 +1256,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.o: Middlewares/Third_
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.o
 
 Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.i: Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.i
@@ -1265,7 +1265,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.i: Middlewares/Third_
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.i
 
 Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.s: Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.s
@@ -1274,7 +1274,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.s: Middlewares/Third_
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/hal_outputs.c.s
 
 Middlewares/Third_Party/InvenSense/core/mllite/message_layer.o: Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.o
@@ -1283,7 +1283,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/message_layer.o: Middlewares/Thir
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.o
 
 Middlewares/Third_Party/InvenSense/core/mllite/message_layer.i: Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.i
@@ -1292,7 +1292,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/message_layer.i: Middlewares/Thir
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.i
 
 Middlewares/Third_Party/InvenSense/core/mllite/message_layer.s: Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.s
@@ -1301,7 +1301,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/message_layer.s: Middlewares/Thir
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/message_layer.c.s
 
 Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.o: Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.o
@@ -1310,7 +1310,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.o: Middlewares/Third
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.o
 
 Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.i: Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.i
@@ -1319,7 +1319,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.i: Middlewares/Third
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.i
 
 Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.s: Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.s
@@ -1328,7 +1328,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.s: Middlewares/Third
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/ml_math_func.c.s
 
 Middlewares/Third_Party/InvenSense/core/mllite/mlmath.o: Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.o
@@ -1337,7 +1337,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/mlmath.o: Middlewares/Third_Party
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.o
 
 Middlewares/Third_Party/InvenSense/core/mllite/mlmath.i: Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.i
@@ -1346,7 +1346,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/mlmath.i: Middlewares/Third_Party
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.i
 
 Middlewares/Third_Party/InvenSense/core/mllite/mlmath.s: Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.s
@@ -1355,7 +1355,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/mlmath.s: Middlewares/Third_Party
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/mlmath.c.s
 
 Middlewares/Third_Party/InvenSense/core/mllite/mpl.o: Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.o
@@ -1364,7 +1364,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/mpl.o: Middlewares/Third_Party/In
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.o
 
 Middlewares/Third_Party/InvenSense/core/mllite/mpl.i: Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.i
@@ -1373,7 +1373,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/mpl.i: Middlewares/Third_Party/In
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.i
 
 Middlewares/Third_Party/InvenSense/core/mllite/mpl.s: Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.s
@@ -1382,7 +1382,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/mpl.s: Middlewares/Third_Party/In
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/mpl.c.s
 
 Middlewares/Third_Party/InvenSense/core/mllite/results_holder.o: Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.o
@@ -1391,7 +1391,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/results_holder.o: Middlewares/Thi
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.o
 
 Middlewares/Third_Party/InvenSense/core/mllite/results_holder.i: Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.i
@@ -1400,7 +1400,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/results_holder.i: Middlewares/Thi
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.i
 
 Middlewares/Third_Party/InvenSense/core/mllite/results_holder.s: Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.s
@@ -1409,7 +1409,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/results_holder.s: Middlewares/Thi
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/results_holder.c.s
 
 Middlewares/Third_Party/InvenSense/core/mllite/start_manager.o: Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.o
@@ -1418,7 +1418,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/start_manager.o: Middlewares/Thir
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.o
 
 Middlewares/Third_Party/InvenSense/core/mllite/start_manager.i: Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.i
@@ -1427,7 +1427,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/start_manager.i: Middlewares/Thir
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.i
 
 Middlewares/Third_Party/InvenSense/core/mllite/start_manager.s: Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.s
@@ -1436,7 +1436,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/start_manager.s: Middlewares/Thir
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/start_manager.c.s
 
 Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.o: Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.o
@@ -1445,7 +1445,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.o: Middlewares/Th
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.o
 
 Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.i: Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.i
@@ -1454,7 +1454,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.i: Middlewares/Th
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.i
 
 Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.s: Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.s
@@ -1463,7 +1463,7 @@ Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.s: Middlewares/Th
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/core/mllite/storage_manager.c.s
 
 Middlewares/Third_Party/InvenSense/uart.o: Middlewares/Third_Party/InvenSense/uart.c.o
@@ -1472,7 +1472,7 @@ Middlewares/Third_Party/InvenSense/uart.o: Middlewares/Third_Party/InvenSense/ua
 
 # target to build an object file
 Middlewares/Third_Party/InvenSense/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/uart.c.o
 .PHONY : Middlewares/Third_Party/InvenSense/uart.c.o
 
 Middlewares/Third_Party/InvenSense/uart.i: Middlewares/Third_Party/InvenSense/uart.c.i
@@ -1481,7 +1481,7 @@ Middlewares/Third_Party/InvenSense/uart.i: Middlewares/Third_Party/InvenSense/ua
 
 # target to preprocess a source file
 Middlewares/Third_Party/InvenSense/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/uart.c.i
 .PHONY : Middlewares/Third_Party/InvenSense/uart.c.i
 
 Middlewares/Third_Party/InvenSense/uart.s: Middlewares/Third_Party/InvenSense/uart.c.s
@@ -1490,7 +1490,7 @@ Middlewares/Third_Party/InvenSense/uart.s: Middlewares/Third_Party/InvenSense/ua
 
 # target to generate assembly for a file
 Middlewares/Third_Party/InvenSense/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/InvenSense/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/InvenSense/uart.c.s
 .PHONY : Middlewares/Third_Party/InvenSense/uart.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.o: Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.o
@@ -1499,7 +1499,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.o: Middlewares/Third_Party/u8g2/cs
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.i: Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.i
@@ -1508,7 +1508,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.i: Middlewares/Third_Party/u8g2/cs
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.s: Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.s
@@ -1517,7 +1517,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.s: Middlewares/Third_Party/u8g2/cs
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_bitmap.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_box.o: Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.o
@@ -1526,7 +1526,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_box.o: Middlewares/Third_Party/u8g2/csrc/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_box.i: Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.i
@@ -1535,7 +1535,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_box.i: Middlewares/Third_Party/u8g2/csrc/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_box.s: Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.s
@@ -1544,7 +1544,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_box.s: Middlewares/Third_Party/u8g2/csrc/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_box.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.o: Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.o
@@ -1553,7 +1553,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.o: Middlewares/Third_Party/u8g2/cs
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.i: Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.i
@@ -1562,7 +1562,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.i: Middlewares/Third_Party/u8g2/cs
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.s: Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.s
@@ -1571,7 +1571,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.s: Middlewares/Third_Party/u8g2/cs
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_buffer.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_circle.o: Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.o
@@ -1580,7 +1580,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_circle.o: Middlewares/Third_Party/u8g2/cs
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_circle.i: Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.i
@@ -1589,7 +1589,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_circle.i: Middlewares/Third_Party/u8g2/cs
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_circle.s: Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.s
@@ -1598,7 +1598,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_circle.s: Middlewares/Third_Party/u8g2/cs
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_circle.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.o: Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.o
@@ -1607,7 +1607,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.o: Middlewares/Third_Party/u
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.i: Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.i
@@ -1616,7 +1616,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.i: Middlewares/Third_Party/u
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.s: Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.s
@@ -1625,7 +1625,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.s: Middlewares/Third_Party/u
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_cleardisplay.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.o: Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.o
@@ -1634,7 +1634,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.i: Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.i
@@ -1643,7 +1643,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.s: Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.s
@@ -1652,7 +1652,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_memory.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.o: Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.o
@@ -1661,7 +1661,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.o: Middlewares/Third_Party/u8g2/c
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.i: Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.i
@@ -1670,7 +1670,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.i: Middlewares/Third_Party/u8g2/c
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.s: Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.s
@@ -1679,7 +1679,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.s: Middlewares/Third_Party/u8g2/c
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_d_setup.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_font.o: Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.o
@@ -1688,7 +1688,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_font.o: Middlewares/Third_Party/u8g2/csrc
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_font.i: Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.i
@@ -1697,7 +1697,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_font.i: Middlewares/Third_Party/u8g2/csrc
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_font.s: Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.s
@@ -1706,7 +1706,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_font.s: Middlewares/Third_Party/u8g2/csrc
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_font.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.o: Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.o
@@ -1715,7 +1715,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.o: Middlewares/Third_Party/u8g2/csr
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.i: Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.i
@@ -1724,7 +1724,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.i: Middlewares/Third_Party/u8g2/csr
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.s: Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.s
@@ -1733,7 +1733,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.s: Middlewares/Third_Party/u8g2/csr
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_fonts.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.o: Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.o
@@ -1742,7 +1742,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.o: Middlewares/Third_Party/u8g2/cs
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.i: Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.i
@@ -1751,7 +1751,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.i: Middlewares/Third_Party/u8g2/cs
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.s: Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.s
@@ -1760,7 +1760,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.s: Middlewares/Third_Party/u8g2/cs
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_hvline.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.o: Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.o
@@ -1769,7 +1769,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.o: Middlewares/Third_Party/u8
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.i: Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.i
@@ -1778,7 +1778,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.i: Middlewares/Third_Party/u8
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.s: Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.s
@@ -1787,7 +1787,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.s: Middlewares/Third_Party/u8
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_input_value.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.o: Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.o
@@ -1796,7 +1796,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.o: Middlewares/Third_Party/u
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.i: Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.i
@@ -1805,7 +1805,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.i: Middlewares/Third_Party/u
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.s: Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.s
@@ -1814,7 +1814,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.s: Middlewares/Third_Party/u
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_intersection.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.o: Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.o
@@ -1823,7 +1823,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.o: Middlewares/Third_Party/u8g2/c
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.i: Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.i
@@ -1832,7 +1832,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.i: Middlewares/Third_Party/u8g2/c
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.s: Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.s
@@ -1841,7 +1841,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.s: Middlewares/Third_Party/u8g2/c
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_kerning.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_line.o: Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.o
@@ -1850,7 +1850,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_line.o: Middlewares/Third_Party/u8g2/csrc
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_line.i: Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.i
@@ -1859,7 +1859,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_line.i: Middlewares/Third_Party/u8g2/csrc
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_line.s: Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.s
@@ -1868,7 +1868,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_line.s: Middlewares/Third_Party/u8g2/csrc
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_line.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.o: Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.o
@@ -1877,7 +1877,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.i: Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.i
@@ -1886,7 +1886,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.s: Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.s
@@ -1895,7 +1895,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_ll_hvline.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_message.o: Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.o
@@ -1904,7 +1904,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_message.o: Middlewares/Third_Party/u8g2/c
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_message.i: Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.i
@@ -1913,7 +1913,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_message.i: Middlewares/Third_Party/u8g2/c
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_message.s: Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.s
@@ -1922,7 +1922,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_message.s: Middlewares/Third_Party/u8g2/c
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_message.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.o: Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.o
@@ -1931,7 +1931,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.o: Middlewares/Third_Party/u8g2/c
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.i: Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.i
@@ -1940,7 +1940,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.i: Middlewares/Third_Party/u8g2/c
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.s: Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.s
@@ -1949,7 +1949,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.s: Middlewares/Third_Party/u8g2/c
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_polygon.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.o: Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.o
@@ -1958,7 +1958,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.o: Middlewares/Third_Party
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.i: Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.i
@@ -1967,7 +1967,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.i: Middlewares/Third_Party
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.s: Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.s
@@ -1976,7 +1976,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.s: Middlewares/Third_Party
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_selection_list.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_setup.o: Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.o
@@ -1985,7 +1985,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_setup.o: Middlewares/Third_Party/u8g2/csr
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_setup.i: Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.i
@@ -1994,7 +1994,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_setup.i: Middlewares/Third_Party/u8g2/csr
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8g2_setup.s: Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.s
@@ -2003,7 +2003,7 @@ Middlewares/Third_Party/u8g2/csrc/u8g2_setup.s: Middlewares/Third_Party/u8g2/csr
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8g2_setup.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8log.o: Middlewares/Third_Party/u8g2/csrc/u8log.c.o
@@ -2012,7 +2012,7 @@ Middlewares/Third_Party/u8g2/csrc/u8log.o: Middlewares/Third_Party/u8g2/csrc/u8l
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8log.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8log.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8log.i: Middlewares/Third_Party/u8g2/csrc/u8log.c.i
@@ -2021,7 +2021,7 @@ Middlewares/Third_Party/u8g2/csrc/u8log.i: Middlewares/Third_Party/u8g2/csrc/u8l
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8log.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8log.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8log.s: Middlewares/Third_Party/u8g2/csrc/u8log.c.s
@@ -2030,7 +2030,7 @@ Middlewares/Third_Party/u8g2/csrc/u8log.s: Middlewares/Third_Party/u8g2/csrc/u8l
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8log.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8log.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.o: Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.o
@@ -2039,7 +2039,7 @@ Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.o: Middlewares/Third_Party/u8g2/csr
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.i: Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.i
@@ -2048,7 +2048,7 @@ Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.i: Middlewares/Third_Party/u8g2/csr
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.s: Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.s
@@ -2057,7 +2057,7 @@ Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.s: Middlewares/Third_Party/u8g2/csr
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8g2.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.o: Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.o
@@ -2066,7 +2066,7 @@ Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.o: Middlewares/Third_Party/u8g2/csr
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.i: Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.i
@@ -2075,7 +2075,7 @@ Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.i: Middlewares/Third_Party/u8g2/csr
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.s: Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.s
@@ -2084,7 +2084,7 @@ Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.s: Middlewares/Third_Party/u8g2/csr
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8log_u8x8.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.o: Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.o
@@ -2093,7 +2093,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.o: Middlewares/Third_Party/u8g2/csrc/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.i: Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.i
@@ -2102,7 +2102,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.i: Middlewares/Third_Party/u8g2/csrc/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.s: Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.s
@@ -2111,7 +2111,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.s: Middlewares/Third_Party/u8g2/csrc/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_8x8.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_byte.o: Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.o
@@ -2120,7 +2120,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_byte.o: Middlewares/Third_Party/u8g2/csrc
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_byte.i: Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.i
@@ -2129,7 +2129,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_byte.i: Middlewares/Third_Party/u8g2/csrc
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_byte.s: Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.s
@@ -2138,7 +2138,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_byte.s: Middlewares/Third_Party/u8g2/csrc
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_byte.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_cad.o: Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.o
@@ -2147,7 +2147,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_cad.o: Middlewares/Third_Party/u8g2/csrc/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_cad.i: Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.i
@@ -2156,7 +2156,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_cad.i: Middlewares/Third_Party/u8g2/csrc/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_cad.s: Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.s
@@ -2165,7 +2165,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_cad.s: Middlewares/Third_Party/u8g2/csrc/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_cad.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_capture.o: Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.o
@@ -2174,7 +2174,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_capture.o: Middlewares/Third_Party/u8g2/c
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_capture.i: Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.i
@@ -2183,7 +2183,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_capture.i: Middlewares/Third_Party/u8g2/c
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_capture.s: Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.s
@@ -2192,7 +2192,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_capture.s: Middlewares/Third_Party/u8g2/c
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_capture.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.o
@@ -2201,7 +2201,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.o: Middlewares/Third_Party/u8
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.i
@@ -2210,7 +2210,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.i: Middlewares/Third_Party/u8
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.s
@@ -2219,7 +2219,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.s: Middlewares/Third_Party/u8
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_a2printer.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.o
@@ -2228,7 +2228,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.o: Middlewares/Third_Par
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.i
@@ -2237,7 +2237,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.i: Middlewares/Third_Par
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.s
@@ -2246,7 +2246,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.s: Middlewares/Third_Par
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_il3820_296x128.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.o
@@ -2255,7 +2255,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.i
@@ -2264,7 +2264,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.s
@@ -2273,7 +2273,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist3020.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.o
@@ -2282,7 +2282,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.i
@@ -2291,7 +2291,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.s
@@ -2300,7 +2300,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ist7920.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.o
@@ -2309,7 +2309,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.i
@@ -2318,7 +2318,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.s
@@ -2327,7 +2327,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ks0108.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.o
@@ -2336,7 +2336,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.i
@@ -2345,7 +2345,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.s
@@ -2354,7 +2354,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_lc7981.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.o
@@ -2363,7 +2363,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.o: Middlewares/Third_Party
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.i
@@ -2372,7 +2372,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.i: Middlewares/Third_Party
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.s
@@ -2381,7 +2381,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.s: Middlewares/Third_Party
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ld7032_60x32.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.o
@@ -2390,7 +2390,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.o: Middlewares/Third_Party/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.i
@@ -2399,7 +2399,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.i: Middlewares/Third_Party/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.s
@@ -2408,7 +2408,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.s: Middlewares/Third_Party/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ls013b7dh03.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.o
@@ -2417,7 +2417,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.i
@@ -2426,7 +2426,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.s
@@ -2435,7 +2435,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_max7219.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.o
@@ -2444,7 +2444,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.o: Middlewares/Third_Part
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.i
@@ -2453,7 +2453,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.i: Middlewares/Third_Part
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.s
@@ -2462,7 +2462,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.s: Middlewares/Third_Part
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcd8544_84x48.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.o
@@ -2471,7 +2471,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.i
@@ -2480,7 +2480,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.s
@@ -2489,7 +2489,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8812.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.o
@@ -2498,7 +2498,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.o: Middlewares/Third_Par
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.i
@@ -2507,7 +2507,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.i: Middlewares/Third_Par
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.s
@@ -2516,7 +2516,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.s: Middlewares/Third_Par
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_pcf8814_hx1230.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.o
@@ -2525,7 +2525,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.i
@@ -2534,7 +2534,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.s
@@ -2543,7 +2543,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sbn1661.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.o
@@ -2552,7 +2552,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.i
@@ -2561,7 +2561,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.s
@@ -2570,7 +2570,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sed1330.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.o
@@ -2579,7 +2579,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.o: Middlewares/Third_Party
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.i
@@ -2588,7 +2588,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.i: Middlewares/Third_Party
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.s
@@ -2597,7 +2597,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.s: Middlewares/Third_Party
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_64x32.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.o
@@ -2606,7 +2606,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.o: Middlewares/Third_Party
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.i
@@ -2615,7 +2615,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.i: Middlewares/Third_Party
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.s
@@ -2624,7 +2624,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.s: Middlewares/Third_Party
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1106_72x40.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.o
@@ -2633,7 +2633,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.i
@@ -2642,7 +2642,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.s
@@ -2651,7 +2651,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1107.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.o
@@ -2660,7 +2660,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.i
@@ -2669,7 +2669,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.s
@@ -2678,7 +2678,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1108.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.o
@@ -2687,7 +2687,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.i
@@ -2696,7 +2696,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.s
@@ -2705,7 +2705,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_sh1122.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.o
@@ -2714,7 +2714,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.i
@@ -2723,7 +2723,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.s
@@ -2732,7 +2732,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1305.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.o
@@ -2741,7 +2741,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.o: Middlewares/Third_Par
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.i
@@ -2750,7 +2750,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.i: Middlewares/Third_Par
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.s
@@ -2759,7 +2759,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.s: Middlewares/Third_Par
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x32.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.o
@@ -2768,7 +2768,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.o: Middlewares/Th
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.i
@@ -2777,7 +2777,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.i: Middlewares/Th
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.s
@@ -2786,7 +2786,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.s: Middlewares/Th
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_128x64_noname.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.o
@@ -2795,7 +2795,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.o: Middlewares/Third_Part
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.i
@@ -2804,7 +2804,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.i: Middlewares/Third_Part
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.s
@@ -2813,7 +2813,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.s: Middlewares/Third_Part
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_48x64.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.o
@@ -2822,7 +2822,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.o: Middlewares/Third_Part
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.i
@@ -2831,7 +2831,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.i: Middlewares/Third_Part
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.s
@@ -2840,7 +2840,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.s: Middlewares/Third_Part
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x32.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.o
@@ -2849,7 +2849,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.o: Middlewares/Third_Part
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.i
@@ -2858,7 +2858,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.i: Middlewares/Third_Part
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.s
@@ -2867,7 +2867,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.s: Middlewares/Third_Part
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_64x48.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.o
@@ -2876,7 +2876,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.o: Middlewares/Third_Part
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.i
@@ -2885,7 +2885,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.i: Middlewares/Third_Part
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.s
@@ -2894,7 +2894,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.s: Middlewares/Third_Part
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_72x40.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.o
@@ -2903,7 +2903,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.o: Middlewares/Third_Part
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.i
@@ -2912,7 +2912,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.i: Middlewares/Third_Part
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.s
@@ -2921,7 +2921,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.s: Middlewares/Third_Part
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1306_96x16.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.o
@@ -2930,7 +2930,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.i
@@ -2939,7 +2939,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.s
@@ -2948,7 +2948,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1309.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.o
@@ -2957,7 +2957,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.i
@@ -2966,7 +2966,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.s
@@ -2975,7 +2975,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1316.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.o
@@ -2984,7 +2984,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.i
@@ -2993,7 +2993,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.s
@@ -3002,7 +3002,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1317.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.o
@@ -3011,7 +3011,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.i
@@ -3020,7 +3020,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.s
@@ -3029,7 +3029,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1318.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.o
@@ -3038,7 +3038,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.i
@@ -3047,7 +3047,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.s
@@ -3056,7 +3056,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1322.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.o
@@ -3065,7 +3065,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.i
@@ -3074,7 +3074,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.s
@@ -3083,7 +3083,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1325.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.o
@@ -3092,7 +3092,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.i
@@ -3101,7 +3101,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.s
@@ -3110,7 +3110,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1326.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.o
@@ -3119,7 +3119,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.i
@@ -3128,7 +3128,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.s
@@ -3137,7 +3137,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1327.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.o
@@ -3146,7 +3146,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.i
@@ -3155,7 +3155,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.s
@@ -3164,7 +3164,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1329.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.o
@@ -3173,7 +3173,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.o: Middlewares/Third_Par
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.i
@@ -3182,7 +3182,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.i: Middlewares/Third_Par
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.s
@@ -3191,7 +3191,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.s: Middlewares/Third_Par
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1606_172x72.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.o
@@ -3200,7 +3200,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.o: Middlewares/Third_Pa
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.i
@@ -3209,7 +3209,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.i: Middlewares/Third_Pa
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.s
@@ -3218,7 +3218,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.s: Middlewares/Third_Pa
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_ssd1607_200x200.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.o
@@ -3227,7 +3227,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.i
@@ -3236,7 +3236,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.s
@@ -3245,7 +3245,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7511.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.o
@@ -3254,7 +3254,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.i
@@ -3263,7 +3263,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.s
@@ -3272,7 +3272,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75256.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.o
@@ -3281,7 +3281,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.i
@@ -3290,7 +3290,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.s
@@ -3299,7 +3299,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7528.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.o
@@ -3308,7 +3308,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.o: Middlewares/Third_Party/u8g2
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.i
@@ -3317,7 +3317,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.i: Middlewares/Third_Party/u8g2
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.s
@@ -3326,7 +3326,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.s: Middlewares/Third_Party/u8g2
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st75320.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.o
@@ -3335,7 +3335,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.i
@@ -3344,7 +3344,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.s
@@ -3353,7 +3353,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7565.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.o
@@ -3362,7 +3362,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.i
@@ -3371,7 +3371,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.s
@@ -3380,7 +3380,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7567.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.o
@@ -3389,7 +3389,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.o: Middlewares/Third_
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.i
@@ -3398,7 +3398,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.i: Middlewares/Third_
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.s
@@ -3407,7 +3407,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.s: Middlewares/Third_
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_erc240160.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.o
@@ -3416,7 +3416,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.o: Middlewares/Third
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.i
@@ -3425,7 +3425,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.i: Middlewares/Third
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.s
@@ -3434,7 +3434,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.s: Middlewares/Third
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7586s_s028hn118a.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.o
@@ -3443,7 +3443,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.i
@@ -3452,7 +3452,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.s
@@ -3461,7 +3461,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7588.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.o
@@ -3470,7 +3470,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.i
@@ -3479,7 +3479,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.s
@@ -3488,7 +3488,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_st7920.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.o
@@ -3497,7 +3497,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.o: Middlewares/Third_Party/u8g2/c
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.i
@@ -3506,7 +3506,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.i: Middlewares/Third_Party/u8g2/c
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.s
@@ -3515,7 +3515,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.s: Middlewares/Third_Party/u8g2/c
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_stdio.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.o
@@ -3524,7 +3524,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.o: Middlewares/Third_Party/u8g2/c
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.i
@@ -3533,7 +3533,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.i: Middlewares/Third_Party/u8g2/c
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.s
@@ -3542,7 +3542,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.s: Middlewares/Third_Party/u8g2/c
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_t6963.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.o
@@ -3551,7 +3551,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.i
@@ -3560,7 +3560,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.s
@@ -3569,7 +3569,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1601.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.o
@@ -3578,7 +3578,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.i
@@ -3587,7 +3587,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.s
@@ -3596,7 +3596,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1604.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.o
@@ -3605,7 +3605,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.i
@@ -3614,7 +3614,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.s
@@ -3623,7 +3623,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1608.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.o
@@ -3632,7 +3632,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.i
@@ -3641,7 +3641,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.s
@@ -3650,7 +3650,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1610.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.o
@@ -3659,7 +3659,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.i
@@ -3668,7 +3668,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.s
@@ -3677,7 +3677,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1611.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.o
@@ -3686,7 +3686,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.i
@@ -3695,7 +3695,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.s
@@ -3704,7 +3704,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1617.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.o
@@ -3713,7 +3713,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.i
@@ -3722,7 +3722,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.s
@@ -3731,7 +3731,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1638.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.o
@@ -3740,7 +3740,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.o: Middlewares/Third_Par
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.i
@@ -3749,7 +3749,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.i: Middlewares/Third_Par
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.s
@@ -3758,7 +3758,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.s: Middlewares/Third_Par
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_dogs102.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.o: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.o
@@ -3767,7 +3767,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.o: Middlewares/Third_P
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.i: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.i
@@ -3776,7 +3776,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.i: Middlewares/Third_P
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.s: Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.s
@@ -3785,7 +3785,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.s: Middlewares/Third_P
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_d_uc1701_mini12864.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.o: Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.o
@@ -3794,7 +3794,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.o: Middlewares/Third_Party/u8g2/
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.i: Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.i
@@ -3803,7 +3803,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.i: Middlewares/Third_Party/u8g2/
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.s: Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.s
@@ -3812,7 +3812,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.s: Middlewares/Third_Party/u8g2/
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_debounce.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_display.o: Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.o
@@ -3821,7 +3821,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_display.o: Middlewares/Third_Party/u8g2/c
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_display.i: Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.i
@@ -3830,7 +3830,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_display.i: Middlewares/Third_Party/u8g2/c
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_display.s: Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.s
@@ -3839,7 +3839,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_display.s: Middlewares/Third_Party/u8g2/c
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_display.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.o: Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.o
@@ -3848,7 +3848,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.o: Middlewares/Third_Party/u8g2/csr
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.i: Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.i
@@ -3857,7 +3857,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.i: Middlewares/Third_Party/u8g2/csr
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.s: Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.s
@@ -3866,7 +3866,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.s: Middlewares/Third_Party/u8g2/csr
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_fonts.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.o: Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.o
@@ -3875,7 +3875,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.o: Middlewares/Third_Party/u8g2/csrc
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.i: Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.i
@@ -3884,7 +3884,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.i: Middlewares/Third_Party/u8g2/csrc
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.s: Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.s
@@ -3893,7 +3893,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.s: Middlewares/Third_Party/u8g2/csrc
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_gpio.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.o: Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.o
@@ -3902,7 +3902,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.o: Middlewares/Third_Party/u8
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.i: Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.i
@@ -3911,7 +3911,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.i: Middlewares/Third_Party/u8
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.s: Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.s
@@ -3920,7 +3920,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.s: Middlewares/Third_Party/u8
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_input_value.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_message.o: Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.o
@@ -3929,7 +3929,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_message.o: Middlewares/Third_Party/u8g2/c
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_message.i: Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.i
@@ -3938,7 +3938,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_message.i: Middlewares/Third_Party/u8g2/c
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_message.s: Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.s
@@ -3947,7 +3947,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_message.s: Middlewares/Third_Party/u8g2/c
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_message.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.o: Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.o
@@ -3956,7 +3956,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.o: Middlewares/Third_Party
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.i: Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.i
@@ -3965,7 +3965,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.i: Middlewares/Third_Party
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.s: Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.s
@@ -3974,7 +3974,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.s: Middlewares/Third_Party
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_selection_list.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_setup.o: Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.o
@@ -3983,7 +3983,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_setup.o: Middlewares/Third_Party/u8g2/csr
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_setup.i: Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.i
@@ -3992,7 +3992,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_setup.i: Middlewares/Third_Party/u8g2/csr
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_setup.s: Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.s
@@ -4001,7 +4001,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_setup.s: Middlewares/Third_Party/u8g2/csr
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_setup.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_string.o: Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.o
@@ -4010,7 +4010,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_string.o: Middlewares/Third_Party/u8g2/cs
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_string.i: Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.i
@@ -4019,7 +4019,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_string.i: Middlewares/Third_Party/u8g2/cs
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_string.s: Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.s
@@ -4028,7 +4028,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_string.s: Middlewares/Third_Party/u8g2/cs
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_string.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.o: Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.o
@@ -4037,7 +4037,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.o: Middlewares/Third_Party/u8g2/cs
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.i: Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.i
@@ -4046,7 +4046,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.i: Middlewares/Third_Party/u8g2/cs
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.s: Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.s
@@ -4055,7 +4055,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.s: Middlewares/Third_Party/u8g2/cs
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u16toa.c.s
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.o: Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.o
@@ -4064,7 +4064,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.o: Middlewares/Third_Party/u8g2/csr
 
 # target to build an object file
 Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.o
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.o
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.i: Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.i
@@ -4073,7 +4073,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.i: Middlewares/Third_Party/u8g2/csr
 
 # target to preprocess a source file
 Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.i
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.i
 
 Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.s: Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.s
@@ -4082,7 +4082,7 @@ Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.s: Middlewares/Third_Party/u8g2/csr
 
 # target to generate assembly for a file
 Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.s
 .PHONY : Middlewares/Third_Party/u8g2/csrc/u8x8_u8toa.c.s
 
 Src/adc.o: Src/adc.c.o
@@ -4091,7 +4091,7 @@ Src/adc.o: Src/adc.c.o
 
 # target to build an object file
 Src/adc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/adc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/adc.c.o
 .PHONY : Src/adc.c.o
 
 Src/adc.i: Src/adc.c.i
@@ -4100,7 +4100,7 @@ Src/adc.i: Src/adc.c.i
 
 # target to preprocess a source file
 Src/adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/adc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/adc.c.i
 .PHONY : Src/adc.c.i
 
 Src/adc.s: Src/adc.c.s
@@ -4109,7 +4109,7 @@ Src/adc.s: Src/adc.c.s
 
 # target to generate assembly for a file
 Src/adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/adc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/adc.c.s
 .PHONY : Src/adc.c.s
 
 Src/board-st_discovery.o: Src/board-st_discovery.c.o
@@ -4118,7 +4118,7 @@ Src/board-st_discovery.o: Src/board-st_discovery.c.o
 
 # target to build an object file
 Src/board-st_discovery.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/board-st_discovery.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/board-st_discovery.c.o
 .PHONY : Src/board-st_discovery.c.o
 
 Src/board-st_discovery.i: Src/board-st_discovery.c.i
@@ -4127,7 +4127,7 @@ Src/board-st_discovery.i: Src/board-st_discovery.c.i
 
 # target to preprocess a source file
 Src/board-st_discovery.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/board-st_discovery.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/board-st_discovery.c.i
 .PHONY : Src/board-st_discovery.c.i
 
 Src/board-st_discovery.s: Src/board-st_discovery.c.s
@@ -4136,7 +4136,7 @@ Src/board-st_discovery.s: Src/board-st_discovery.c.s
 
 # target to generate assembly for a file
 Src/board-st_discovery.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/board-st_discovery.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/board-st_discovery.c.s
 .PHONY : Src/board-st_discovery.c.s
 
 Src/dma.o: Src/dma.c.o
@@ -4145,7 +4145,7 @@ Src/dma.o: Src/dma.c.o
 
 # target to build an object file
 Src/dma.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/dma.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/dma.c.o
 .PHONY : Src/dma.c.o
 
 Src/dma.i: Src/dma.c.i
@@ -4154,7 +4154,7 @@ Src/dma.i: Src/dma.c.i
 
 # target to preprocess a source file
 Src/dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/dma.c.i
 .PHONY : Src/dma.c.i
 
 Src/dma.s: Src/dma.c.s
@@ -4163,7 +4163,7 @@ Src/dma.s: Src/dma.c.s
 
 # target to generate assembly for a file
 Src/dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/dma.c.s
 .PHONY : Src/dma.c.s
 
 Src/freertos.o: Src/freertos.c.o
@@ -4172,7 +4172,7 @@ Src/freertos.o: Src/freertos.c.o
 
 # target to build an object file
 Src/freertos.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/freertos.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/freertos.c.o
 .PHONY : Src/freertos.c.o
 
 Src/freertos.i: Src/freertos.c.i
@@ -4181,7 +4181,7 @@ Src/freertos.i: Src/freertos.c.i
 
 # target to preprocess a source file
 Src/freertos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/freertos.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/freertos.c.i
 .PHONY : Src/freertos.c.i
 
 Src/freertos.s: Src/freertos.c.s
@@ -4190,7 +4190,7 @@ Src/freertos.s: Src/freertos.c.s
 
 # target to generate assembly for a file
 Src/freertos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/freertos.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/freertos.c.s
 .PHONY : Src/freertos.c.s
 
 Src/gpio.o: Src/gpio.c.o
@@ -4199,7 +4199,7 @@ Src/gpio.o: Src/gpio.c.o
 
 # target to build an object file
 Src/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/gpio.c.o
 .PHONY : Src/gpio.c.o
 
 Src/gpio.i: Src/gpio.c.i
@@ -4208,7 +4208,7 @@ Src/gpio.i: Src/gpio.c.i
 
 # target to preprocess a source file
 Src/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/gpio.c.i
 .PHONY : Src/gpio.c.i
 
 Src/gpio.s: Src/gpio.c.s
@@ -4217,7 +4217,7 @@ Src/gpio.s: Src/gpio.c.s
 
 # target to generate assembly for a file
 Src/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/gpio.c.s
 .PHONY : Src/gpio.c.s
 
 Src/i2c.o: Src/i2c.c.o
@@ -4226,7 +4226,7 @@ Src/i2c.o: Src/i2c.c.o
 
 # target to build an object file
 Src/i2c.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/i2c.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/i2c.c.o
 .PHONY : Src/i2c.c.o
 
 Src/i2c.i: Src/i2c.c.i
@@ -4235,7 +4235,7 @@ Src/i2c.i: Src/i2c.c.i
 
 # target to preprocess a source file
 Src/i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/i2c.c.i
 .PHONY : Src/i2c.c.i
 
 Src/i2c.s: Src/i2c.c.s
@@ -4244,7 +4244,7 @@ Src/i2c.s: Src/i2c.c.s
 
 # target to generate assembly for a file
 Src/i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/i2c.c.s
 .PHONY : Src/i2c.c.s
 
 Src/main.o: Src/main.c.o
@@ -4253,7 +4253,7 @@ Src/main.o: Src/main.c.o
 
 # target to build an object file
 Src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/main.c.o
 .PHONY : Src/main.c.o
 
 Src/main.i: Src/main.c.i
@@ -4262,7 +4262,7 @@ Src/main.i: Src/main.c.i
 
 # target to preprocess a source file
 Src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/main.c.i
 .PHONY : Src/main.c.i
 
 Src/main.s: Src/main.c.s
@@ -4271,7 +4271,7 @@ Src/main.s: Src/main.c.s
 
 # target to generate assembly for a file
 Src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/main.c.s
 .PHONY : Src/main.c.s
 
 Src/stm32f1xx_hal_msp.o: Src/stm32f1xx_hal_msp.c.o
@@ -4280,7 +4280,7 @@ Src/stm32f1xx_hal_msp.o: Src/stm32f1xx_hal_msp.c.o
 
 # target to build an object file
 Src/stm32f1xx_hal_msp.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/stm32f1xx_hal_msp.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/stm32f1xx_hal_msp.c.o
 .PHONY : Src/stm32f1xx_hal_msp.c.o
 
 Src/stm32f1xx_hal_msp.i: Src/stm32f1xx_hal_msp.c.i
@@ -4289,7 +4289,7 @@ Src/stm32f1xx_hal_msp.i: Src/stm32f1xx_hal_msp.c.i
 
 # target to preprocess a source file
 Src/stm32f1xx_hal_msp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/stm32f1xx_hal_msp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/stm32f1xx_hal_msp.c.i
 .PHONY : Src/stm32f1xx_hal_msp.c.i
 
 Src/stm32f1xx_hal_msp.s: Src/stm32f1xx_hal_msp.c.s
@@ -4298,7 +4298,7 @@ Src/stm32f1xx_hal_msp.s: Src/stm32f1xx_hal_msp.c.s
 
 # target to generate assembly for a file
 Src/stm32f1xx_hal_msp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/stm32f1xx_hal_msp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/stm32f1xx_hal_msp.c.s
 .PHONY : Src/stm32f1xx_hal_msp.c.s
 
 Src/stm32f1xx_hal_timebase_tim.o: Src/stm32f1xx_hal_timebase_tim.c.o
@@ -4307,7 +4307,7 @@ Src/stm32f1xx_hal_timebase_tim.o: Src/stm32f1xx_hal_timebase_tim.c.o
 
 # target to build an object file
 Src/stm32f1xx_hal_timebase_tim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.o
 .PHONY : Src/stm32f1xx_hal_timebase_tim.c.o
 
 Src/stm32f1xx_hal_timebase_tim.i: Src/stm32f1xx_hal_timebase_tim.c.i
@@ -4316,7 +4316,7 @@ Src/stm32f1xx_hal_timebase_tim.i: Src/stm32f1xx_hal_timebase_tim.c.i
 
 # target to preprocess a source file
 Src/stm32f1xx_hal_timebase_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.i
 .PHONY : Src/stm32f1xx_hal_timebase_tim.c.i
 
 Src/stm32f1xx_hal_timebase_tim.s: Src/stm32f1xx_hal_timebase_tim.c.s
@@ -4325,7 +4325,7 @@ Src/stm32f1xx_hal_timebase_tim.s: Src/stm32f1xx_hal_timebase_tim.c.s
 
 # target to generate assembly for a file
 Src/stm32f1xx_hal_timebase_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/stm32f1xx_hal_timebase_tim.c.s
 .PHONY : Src/stm32f1xx_hal_timebase_tim.c.s
 
 Src/stm32f1xx_it.o: Src/stm32f1xx_it.c.o
@@ -4334,7 +4334,7 @@ Src/stm32f1xx_it.o: Src/stm32f1xx_it.c.o
 
 # target to build an object file
 Src/stm32f1xx_it.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/stm32f1xx_it.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/stm32f1xx_it.c.o
 .PHONY : Src/stm32f1xx_it.c.o
 
 Src/stm32f1xx_it.i: Src/stm32f1xx_it.c.i
@@ -4343,7 +4343,7 @@ Src/stm32f1xx_it.i: Src/stm32f1xx_it.c.i
 
 # target to preprocess a source file
 Src/stm32f1xx_it.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/stm32f1xx_it.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/stm32f1xx_it.c.i
 .PHONY : Src/stm32f1xx_it.c.i
 
 Src/stm32f1xx_it.s: Src/stm32f1xx_it.c.s
@@ -4352,7 +4352,7 @@ Src/stm32f1xx_it.s: Src/stm32f1xx_it.c.s
 
 # target to generate assembly for a file
 Src/stm32f1xx_it.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/stm32f1xx_it.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/stm32f1xx_it.c.s
 .PHONY : Src/stm32f1xx_it.c.s
 
 Src/system_stm32f1xx.o: Src/system_stm32f1xx.c.o
@@ -4361,7 +4361,7 @@ Src/system_stm32f1xx.o: Src/system_stm32f1xx.c.o
 
 # target to build an object file
 Src/system_stm32f1xx.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/system_stm32f1xx.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/system_stm32f1xx.c.o
 .PHONY : Src/system_stm32f1xx.c.o
 
 Src/system_stm32f1xx.i: Src/system_stm32f1xx.c.i
@@ -4370,7 +4370,7 @@ Src/system_stm32f1xx.i: Src/system_stm32f1xx.c.i
 
 # target to preprocess a source file
 Src/system_stm32f1xx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/system_stm32f1xx.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/system_stm32f1xx.c.i
 .PHONY : Src/system_stm32f1xx.c.i
 
 Src/system_stm32f1xx.s: Src/system_stm32f1xx.c.s
@@ -4379,7 +4379,7 @@ Src/system_stm32f1xx.s: Src/system_stm32f1xx.c.s
 
 # target to generate assembly for a file
 Src/system_stm32f1xx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/system_stm32f1xx.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/system_stm32f1xx.c.s
 .PHONY : Src/system_stm32f1xx.c.s
 
 Src/tim.o: Src/tim.c.o
@@ -4388,7 +4388,7 @@ Src/tim.o: Src/tim.c.o
 
 # target to build an object file
 Src/tim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/tim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/tim.c.o
 .PHONY : Src/tim.c.o
 
 Src/tim.i: Src/tim.c.i
@@ -4397,7 +4397,7 @@ Src/tim.i: Src/tim.c.i
 
 # target to preprocess a source file
 Src/tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/tim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/tim.c.i
 .PHONY : Src/tim.c.i
 
 Src/tim.s: Src/tim.c.s
@@ -4406,7 +4406,7 @@ Src/tim.s: Src/tim.c.s
 
 # target to generate assembly for a file
 Src/tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/tim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/tim.c.s
 .PHONY : Src/tim.c.s
 
 Src/usart.o: Src/usart.c.o
@@ -4415,7 +4415,7 @@ Src/usart.o: Src/usart.c.o
 
 # target to build an object file
 Src/usart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/usart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/usart.c.o
 .PHONY : Src/usart.c.o
 
 Src/usart.i: Src/usart.c.i
@@ -4424,7 +4424,7 @@ Src/usart.i: Src/usart.c.i
 
 # target to preprocess a source file
 Src/usart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/usart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/usart.c.i
 .PHONY : Src/usart.c.i
 
 Src/usart.s: Src/usart.c.s
@@ -4433,7 +4433,7 @@ Src/usart.s: Src/usart.c.s
 
 # target to generate assembly for a file
 Src/usart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/Src/usart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/Src/usart.c.s
 .PHONY : Src/usart.c.s
 
 startup_stm32f103xb.o: startup_stm32f103xb.s.o
@@ -4442,7 +4442,7 @@ startup_stm32f103xb.o: startup_stm32f103xb.s.o
 
 # target to build an object file
 startup_stm32f103xb.s.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minisumo128k.elf.dir/build.make CMakeFiles/minisumo128k.elf.dir/startup_stm32f103xb.s.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/build.make CMakeFiles/Mini-sumo_FreeRTOS.elf.dir/startup_stm32f103xb.s.o
 .PHONY : startup_stm32f103xb.s.o
 
 # Help Target
@@ -4453,7 +4453,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... minisumo128k.elf"
+	@echo "... Mini-sumo_FreeRTOS.elf"
 	@echo "... Application/Src/imu.o"
 	@echo "... Application/Src/imu.i"
 	@echo "... Application/Src/imu.s"

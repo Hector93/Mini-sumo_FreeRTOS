@@ -5,3 +5,4 @@ Middlewares/Third_Party/u8g2/doc
 Middlewares/Third_Party/u8g2/sys
 Middlewares/Third_Party/u8g2/tools
 Middlewares/Third_Party/stm32-ssd1306
+build/

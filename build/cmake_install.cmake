@@ -1,4 +1,4 @@
-# Install script for directory: /home/hector/Documents/Robotica/firmware/borrar/minisumo128k
+# Install script for directory: /home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hector/Documents/Robotica/firmware/borrar/minisumo128k/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hector/Documents/Robotica/firmware/Mini-sumo_FreeRTOS/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
