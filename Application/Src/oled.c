@@ -84,40 +84,11 @@ uint8_t u8x8_byte_stm32_hw_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void 
 
 void oled(void const * argument){
   UNUSED(argument);
-  /* SSD1306_Buffer = (uint8_t*)pvPortMalloc(SSD1306_WIDTH * SSD1306_HEIGHT / 8); */
-  /* for(int i = 0; i < SSD1306_WIDTH * SSD1306_HEIGHT / 8; i ++){ */
-  /*   SSD1306_Buffer[i] = 0; */
-  /* } */
-  /* fonts6x8 = (uint16_t*)pvPortMalloc(sizeof(unsigned char) * 1520); */
-  /* fonts6x8[1] = 0; */
-  /* fonts6x8[0] = 0; */
-  /* Sensors_I2C_WriteRegister(0x50, 12, 1, (uint8_t*)fonts6x8); */
-  /* taskENTER_CRITICAL(); */
-  /* HAL_I2C_Master_Receive(&hi2c1, 0x50 << 1, (uint8_t*)fonts6x8, 1520, 1000000); */
-  /* taskEXIT_CRITICAL(); */
-
-  /* Font_6x8.FontWidth = 6; */
-  /* Font_6x8.FontHeight = 8; */
-  /* Font_6x8.data = fonts6x8; */
-
-  /* ssd1306_Init(); */
-  /* ssd1306_Fill(Black); */
-  /* ssd1306_UpdateScreen(); */
-  /* ssd1306_SetCursor(10, 0); */
-  /* ssd1306_WriteString("no le des el makefile", Font_6x8, White); */
-  /* ssd1306_SetCursor(10, 10); */
-  /* ssd1306_WriteString("a Salvador XD", Font_6x8, White); */
-  /* ssd1306_UpdateScreen(); */
-  /* int i = 0; */
-  /* for(;;){ */
-  /*   vTaskDelay(1000); */
-  /* } */
 
   extern volatile miniStatus status;
+  uint8_t *buf = (uint8_t*)pvPortMalloc(512);
   u8g2_Setup_ssd1306_i2c_128x32_univision_f(&u8g2, U8G2_R0, u8x8_byte_stm32_hw_i2c, u8x8_stm32_gpio_and_delay);
-  /* for(;;){ */
-  /*   vTaskDelay(100); */
-  /* } */
+  u8g2_SetBufferPtr(&u8g2, buf);
   u8g2_SetI2CAddress(&u8g2, 0x3c);
   u8g2_InitDisplay(&u8g2);
   u8g2_SetPowerSave(&u8g2, 0);
@@ -129,8 +100,8 @@ void oled(void const * argument){
     u8g2_SetFont(&u8g2, u8g2_font_t0_11_tr);
     do
       {
-	//sprintf(msg, "comando: %d %d", status.irCommand, i++);
-	//u8g2_DrawStr(&u8g2, 0, 8, msg);
+	sprintf(msg, "comando: %d %d", status.irCommand, i++);
+	u8g2_DrawStr(&u8g2, 0, 8, msg);
 	u8g2_DrawFrame(&u8g2, 1, 3, 24, i);
 	u8g2_DrawFrame(&u8g2, 26, 3, 24, i);
 	u8g2_DrawFrame(&u8g2, 51, 3, 24, i);
