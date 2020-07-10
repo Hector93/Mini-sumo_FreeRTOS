@@ -1,13 +1,10 @@
+#include "string.h"
 #include "oled.h"
-//#include "ssd1306.h"
 #include "i2c.h"
 #include "u8g2.h"
 #include "imu.h"
 #include "sensorsDist.h"
 #include "stdio.h"
-//uint16_t* fonts6x8;
-/* FontDef Font_6x8; */
-/* uint8_t* SSD1306_Buffer; */
 
 typedef struct {
   long heading;
@@ -20,6 +17,16 @@ typedef struct {
 }miniStatus;
 
 static u8g2_t u8g2;
+uint8_t *buffer;
+uint8_t *bufferDMA;
+
+void HAL_I2C_MasterTxCpltCallback(I2C_HandleTypeDef *hi2c){
+  UNUSED(hi2c);
+  BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+  if(pdPASS == (xSemaphoreGiveFromISR(i2cSemHandle,&xHigherPriorityTaskWoken))){
+    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+  }
+}
 
 uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,
 				  U8X8_UNUSED uint8_t msg, U8X8_UNUSED uint8_t arg_int,
@@ -42,44 +49,46 @@ uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,
 }
 
 
-uint8_t u8x8_byte_stm32_hw_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
-{
-  static uint8_t buffer[32];		/* u8g2/u8x8 will never send more than 32 bytes between START_TRANSFER and END_TRANSFER */
-  static uint8_t buf_idx;
-  uint8_t *data;
-  uint8_t res = 1;
+		   uint8_t u8x8_byte_stm32_hw_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
+  {
+    //  static uint8_t buffer[32];		/* u8g2/u8x8 will never send more than 32 bytes between START_TRANSFER and END_TRANSFER */
+    static uint8_t buf_idx;
+    uint8_t *data;
+    uint8_t res = 1;
 
-  switch(msg)
-    {
-    case U8X8_MSG_BYTE_SEND:
-      data = (uint8_t *)arg_ptr;
-      while( arg_int > 0 )
+    switch(msg)
 	{
-	  buffer[buf_idx++] = *data;
-	  data++;
-	  arg_int--;
+	case U8X8_MSG_BYTE_SEND:
+	  data = (uint8_t *)arg_ptr;
+	  while( arg_int > 0 )
+	    {
+	      buffer[buf_idx++] = *data;
+	      data++;
+	      arg_int--;
+	    }
+	  break;
+	case U8X8_MSG_BYTE_INIT:
+	  /* add your custom code to init i2c subsystem */
+	  break;
+	case U8X8_MSG_BYTE_SET_DC:
+	  /* ignored for i2c */
+	  break;
+	case U8X8_MSG_BYTE_START_TRANSFER:
+	  buf_idx = 0;
+	  break;
+	case U8X8_MSG_BYTE_END_TRANSFER:
+	  //i2c_transfer(u8x8_GetI2CAddress(u8x8) >> 1, buf_idx, buffer);
+	  xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
+	  memcpy(bufferDMA, buffer, 32);
+	  res = ( HAL_OK == HAL_I2C_Master_Transmit_DMA(&hi2c1, u8x8_GetI2CAddress(u8x8) << 1, bufferDMA, buf_idx) ? 1 : 0);
+	  //res = ( HAL_OK ==HAL_I2C_Master_Transmit(&hi2c1, u8x8_GetI2CAddress(u8x8) << 1, buffer, buf_idx, 1000) ? 1 : 0);
+	  //xSemaphoreGive(i2cSemHandle);
+	  break;
+	default:
+	  return 0;
 	}
-      break;
-    case U8X8_MSG_BYTE_INIT:
-      /* add your custom code to init i2c subsystem */
-      break;
-    case U8X8_MSG_BYTE_SET_DC:
-      /* ignored for i2c */
-      break;
-    case U8X8_MSG_BYTE_START_TRANSFER:
-      buf_idx = 0;
-      break;
-    case U8X8_MSG_BYTE_END_TRANSFER:
-      //i2c_transfer(u8x8_GetI2CAddress(u8x8) >> 1, buf_idx, buffer);
-      taskENTER_CRITICAL();
-      res = ( HAL_OK ==HAL_I2C_Master_Transmit(&hi2c1, u8x8_GetI2CAddress(u8x8) << 1, buffer, buf_idx, 1000) ? 1 : 0);
-      taskEXIT_CRITICAL();
-      break;
-    default:
-      return 0;
-    }
-  return res;
-}
+    return res;
+  }
 
 
 void oled(void const * argument){
@@ -87,6 +96,9 @@ void oled(void const * argument){
 
   extern volatile miniStatus status;
   uint8_t *buf = (uint8_t*)pvPortMalloc(512);
+  buffer = (uint8_t*)pvPortMalloc(32);
+  bufferDMA = (uint8_t*)pvPortMalloc(32);
+
   u8g2_Setup_ssd1306_i2c_128x32_univision_f(&u8g2, U8G2_R0, u8x8_byte_stm32_hw_i2c, u8x8_stm32_gpio_and_delay);
   u8g2_SetBufferPtr(&u8g2, buf);
   u8g2_SetI2CAddress(&u8g2, 0x3c);

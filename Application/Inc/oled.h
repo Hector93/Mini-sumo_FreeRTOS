@@ -21,5 +21,6 @@ extern "C" {
    /* fonts7x10.txt con tamaño: 1900 que ocupara: 60 paginas y inicia en la direccion: 18,0 */
 
   extern  osThreadId oledDisHandle;
+  extern osSemaphoreId i2cSemHandle;
 
 #endif
