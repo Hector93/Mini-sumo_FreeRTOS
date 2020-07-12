@@ -33,6 +33,8 @@
 #define IMUERROR      255
 
 extern osMessageQId imuQueueHandle;
+extern osSemaphoreId i2cSemHandle;
+
 uint8_t Sensors_I2C_WriteRegister(unsigned char slave_addr, unsigned char reg_addr, unsigned char length, unsigned char *data);
 uint8_t Sensors_I2C_ReadRegister(unsigned char slave_addr, unsigned char reg_addr, unsigned char length, unsigned char *data);
 

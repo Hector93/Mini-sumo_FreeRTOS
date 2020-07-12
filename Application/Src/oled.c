@@ -28,6 +28,30 @@ void HAL_I2C_MasterTxCpltCallback(I2C_HandleTypeDef *hi2c){
   }
 }
 
+void HAL_I2C_MasterRxCpltCallback(I2C_HandleTypeDef *hi2c){
+  UNUSED(hi2c);
+  BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+  if(pdPASS == (xSemaphoreGiveFromISR(i2cSemHandle,&xHigherPriorityTaskWoken))){
+    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+  }
+}
+
+void HAL_I2C_MemRxCpltCallback(I2C_HandleTypeDef *hi2c){
+  UNUSED(hi2c);
+  BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+  if(pdPASS == (xSemaphoreGiveFromISR(i2cSemHandle,&xHigherPriorityTaskWoken))){
+    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+  }
+}
+
+void HAL_I2C_MemTxCpltCallback(I2C_HandleTypeDef *hi2c){
+  UNUSED(hi2c);
+  BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+  if(pdPASS == (xSemaphoreGiveFromISR(i2cSemHandle,&xHigherPriorityTaskWoken))){
+    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+  }
+}
+
 uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,
 				  U8X8_UNUSED uint8_t msg, U8X8_UNUSED uint8_t arg_int,
 				  U8X8_UNUSED void *arg_ptr)
@@ -35,10 +59,12 @@ uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,
   switch (msg)
     {
     case U8X8_MSG_GPIO_AND_DELAY_INIT:
-      HAL_Delay(1);
+      //HAL_Delay(1);
+      vTaskDelay(pdMS_TO_TICKS(1));
       break;
     case U8X8_MSG_DELAY_MILLI:
-      HAL_Delay(arg_int);
+      //HAL_Delay(arg_int);
+      vTaskDelay(pdMS_TO_TICKS(arg_int));
       break;
     case U8X8_MSG_GPIO_DC:
       break;
@@ -77,12 +103,9 @@ uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,
 	  buf_idx = 0;
 	  break;
 	case U8X8_MSG_BYTE_END_TRANSFER:
-	  //i2c_transfer(u8x8_GetI2CAddress(u8x8) >> 1, buf_idx, buffer);
 	  xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
 	  memcpy(bufferDMA, buffer, 32);
-	  res = ( HAL_OK == HAL_I2C_Master_Transmit_DMA(&hi2c1, u8x8_GetI2CAddress(u8x8) << 1, bufferDMA, buf_idx) ? 1 : 0);
-	  //res = ( HAL_OK ==HAL_I2C_Master_Transmit(&hi2c1, u8x8_GetI2CAddress(u8x8) << 1, buffer, buf_idx, 1000) ? 1 : 0);
-	  //xSemaphoreGive(i2cSemHandle);
+	  res = ( HAL_OK == HAL_I2C_Master_Transmit_IT(&hi2c1, u8x8_GetI2CAddress(u8x8) << 1, bufferDMA, buf_idx) ? 1 : 0);
 	  break;
 	default:
 	  return 0;

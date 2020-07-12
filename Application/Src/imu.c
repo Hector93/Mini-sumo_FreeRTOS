@@ -791,48 +791,39 @@ int imuInit(){
 
   dmp_memory = pvPortMalloc(sizeof(unsigned char) * 3062);
   dmp_memory[0]=0;
-  //if(HAL_OK == (HAL_I2C_IsDeviceReady(&hi2c1,0x50 << 1,15,1000))){
+
   Sensors_I2C_WriteRegister(0x50,0,1,dmp_memory);
-  //HAL_I2C_Mem_Write(&hi2c1, 0x50 << 1, 0x0061, 32, dmp_memory, 0, 100);
-  //    HAL_I2C_Mem_Write(&hi2c1,0x50 << 1,0,sizeof(uint8_t),dmp_memory,1,10000);
-  //}
-  //if(HAL_OK == (HAL_I2C_IsDeviceReady(&hi2c1,0x50 << 1,15,1000))){
-  //  Sensors_I2C_ReadRegister(0x50,0,(unsigned int)3062,dmp_memory);
-  //  HAL_I2C_Mem_Read(&hi2c1,0x50 << 1,0,sizeof(uint8_t),dmp_memory,3062,100000);
-  taskENTER_CRITICAL();
+
   HAL_I2C_Master_Receive(&hi2c1, 0x50 << 1, dmp_memory, 3062, 1000000);
-  taskEXIT_CRITICAL();
-  //}
 
   if(0 != dmp_load_motion_driver_firmware()){
     return -1;
   }
-  vPortFree(dmp_memory);
-  //  free(dmp_memory);
-  if(0 != dmp_set_orientation(inv_orientation_matrix_to_scalar(gyro_pdata.orientation))){
-    return -1;
-  }
-  if(0 != dmp_register_tap_cb(tap_cb)){
-    return -1;
-  }
-  if(0 != dmp_register_android_orient_cb(android_orient_cb)){
-    return -1;
-  }
+ vPortFree(dmp_memory);
+ if(0 != dmp_set_orientation(inv_orientation_matrix_to_scalar(gyro_pdata.orientation))){
+   return -1;
+ }
+ if(0 != dmp_register_tap_cb(tap_cb)){
+   return -1;
+ }
+ if(0 != dmp_register_android_orient_cb(android_orient_cb)){
+   return -1;
+ }
 
-  /*
-   * Known Bug -
-   * DMP when enabled will sample sensor data at 200Hz and output to FIFO at the rate
-   * specified in the dmp_set_fifo_rate API. The DMP will then sent an interrupt once
-   * a sample has been put into the FIFO. Therefore if the dmp_set_fifo_rate is at 25Hz
-   * there will be a 25Hz interrupt from the MPU device.
-   *
-   * There is a known issue in which if you do not enable DMP_FEATURE_TAP
-   * then the interrupts will be at 200Hz even if fifo rate
-   * is set at a different rate. To avoid this issue include the DMP_FEATURE_TAP
-   *
-   * DMP sensor fusion works only with gyro at +-2000dps and accel +-2G
-   */
-  hal.dmp_features = DMP_FEATURE_6X_LP_QUAT | DMP_FEATURE_TAP |
+ /*
+  * Known Bug -
+  * DMP when enabled will sample sensor data at 200Hz and output to FIFO at the rate
+  * specified in the dmp_set_fifo_rate API. The DMP will then sent an interrupt once
+  * a sample has been put into the FIFO. Therefore if the dmp_set_fifo_rate is at 25Hz
+  * there will be a 25Hz interrupt from the MPU device.
+  *
+  * There is a known issue in which if you do not enable DMP_FEATURE_TAP
+  * then the interrupts will be at 200Hz even if fifo rate
+  * is set at a different rate. To avoid this issue include the DMP_FEATURE_TAP
+  *
+  * DMP sensor fusion works only with gyro at +-2000dps and accel +-2G
+  */
+ hal.dmp_features = DMP_FEATURE_6X_LP_QUAT | DMP_FEATURE_TAP |
     DMP_FEATURE_ANDROID_ORIENT | DMP_FEATURE_SEND_RAW_ACCEL | DMP_FEATURE_SEND_CAL_GYRO |
     DMP_FEATURE_GYRO_CAL;
   dmp_enable_feature(hal.dmp_features);
@@ -949,55 +940,65 @@ int imuInvProcessData(){
   return 0;
 }
 
+uint8_t init = 1;
+
 void imu(void const * argument){
   UNUSED(argument);
   //HAL_Delay(100);
   //xSemaphoreGive(imuSemHandle);
-  taskENTER_CRITICAL();
   //int res = imuInit();
+  //while(1){vTaskDelay(1000);}
+  taskENTER_CRITICAL();
   if(imuInit() < 0){
     MPL_LOGE("Could not initialize IMU.\r\n");
+    //while(1);
   }
   taskEXIT_CRITICAL();
-
+  init = 0;
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
-//while(1);
+  //while(1);
 
-for(;;){
-  //    message rx;
-  //    if(pdPASS == (xQueueReceive(imuQueueHandle, &rx, 0))){
-  /* A byte has been received via USART. See handle_input for a list of
-   * valid commands.
-   */
-  //handle_input(rx.messageUser.type);
-  // }
-  if(pdTRUE == xSemaphoreTake(imuSemHandle, portMAX_DELAY)){
-    if(imuInvProcessData()){
-      /* This function reads bias-compensated sensor data and sensor
-       * fusion outputs from the MPL. The outputs are formatted as seen
-       * in eMPL_outputs.c. This function only needs to be called at the
-       * rate requested by the host.
-       */
-      read_from_mpl();
+  for(;;){
+    //    message rx;
+    //    if(pdPASS == (xQueueReceive(imuQueueHandle, &rx, 0))){
+    /* A byte has been received via USART. See handle_input for a list of
+     * valid commands.
+     */
+    //handle_input(rx.messageUser.type);
+    // }
+    if(pdTRUE == xSemaphoreTake(imuSemHandle, portMAX_DELAY)){
+      if(imuInvProcessData()){
+	/* This function reads bias-compensated sensor data and sensor
+	 * fusion outputs from the MPL. The outputs are formatted as seen
+	 * in eMPL_outputs.c. This function only needs to be called at the
+	 * rate requested by the host.
+	 */
+	read_from_mpl();
+      }
     }
+    //taskYIELD();
+    //vTaskDelay(100);
   }
-  //taskYIELD();
-  //vTaskDelay(100);
- }
 }
 
 
 uint8_t Sensors_I2C_WriteRegister(unsigned char slave_addr, unsigned char reg_addr, unsigned char length, unsigned char *data){
-  taskENTER_CRITICAL();
-  uint8_t res = (HAL_OK == HAL_I2C_Mem_Write(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length,10000) ? 0 : 1);
-  taskEXIT_CRITICAL();
+  if(init){
+    uint8_t res = (HAL_OK == HAL_I2C_Mem_Write(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 1000) ? 0 : 1);
+    return res;
+  }
+  xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
+  uint8_t res = (HAL_OK == HAL_I2C_Mem_Write_IT(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length) ? 0 : 1);
   return res;
 }
 
 uint8_t Sensors_I2C_ReadRegister(unsigned char slave_addr, unsigned char reg_addr, unsigned char length, unsigned char *data){
-  taskENTER_CRITICAL();
-  uint8_t res = (HAL_OK == HAL_I2C_Mem_Read(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length,100000)? 0 : 1);
-  taskEXIT_CRITICAL();
+  if(init){
+    uint8_t res = (HAL_OK == HAL_I2C_Mem_Read(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 1000)? 0 : 1);
+    return res;
+  }
+  xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
+  uint8_t res = (HAL_OK == HAL_I2C_Mem_Read_IT(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length)? 0 : 1);
   return res;
 }
 
