@@ -7,7 +7,7 @@
 #include "usart.h"
 #include "queue.h"
 #include "mini.h"
-
+#include "misc.h"
 
 uint8_t sensorDistStatus; //stores the info of enabled sensors
 sensorDistData distSensorDataInternal;
@@ -17,7 +17,7 @@ int8_t findOponent();
 void irSensorsIoController();
 void SensorDistProcessMessage(message msg);
 void processAdc();
-uint8_t map(uint32_t x, uint32_t in_min, uint32_t in_max, uint32_t out_min, uint32_t out_max);
+//uint8_t map(uint32_t x, uint32_t in_min, uint32_t in_max, uint32_t out_min, uint32_t out_max);
 
 void sensorsDist(void const* argument){
   UNUSED(argument);
@@ -171,9 +171,9 @@ void processAdc(){
   }
 }
 
-uint8_t map(uint32_t x, uint32_t in_min, uint32_t in_max, uint32_t out_min, uint32_t out_max){
-  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-}
+/* uint8_t map(uint32_t x, uint32_t in_min, uint32_t in_max, uint32_t out_min, uint32_t out_max){ */
+/*   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min; */
+/* } */
 //ADCCALLBACK
 void SensorsDistInterrupt(ADC_HandleTypeDef* hadc){
   UNUSED(hadc); //the adc1 always generates the ISR
