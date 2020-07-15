@@ -17,7 +17,7 @@ int8_t findOponent();
 void irSensorsIoController();
 void SensorDistProcessMessage(message msg);
 void processAdc();
-//uint8_t map(uint32_t x, uint32_t in_min, uint32_t in_max, uint32_t out_min, uint32_t out_max);
+
 
 void sensorsDist(void const* argument){
   UNUSED(argument);
@@ -26,34 +26,37 @@ void sensorsDist(void const* argument){
   const TickType_t xPeriod = pdMS_TO_TICKS( 8);
   xSemaphoreTake(irdistHandle,portMAX_DELAY);
   sensorDistStatus = 31; //by default all sensors are started
-  HAL_GPIO_WritePin(ird_enLD_GPIO_Port, ird_enLD_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(ird_enLI_GPIO_Port, ird_enLI_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(ird_enFI_GPIO_Port, ird_enFI_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(ird_enFC_GPIO_Port, ird_enFC_Pin, GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(ird_enFD_GPIO_Port, ird_enFD_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(ird_enLD_GPIO_Port, ird_enLD_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(ird_enLI_GPIO_Port, ird_enLI_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(ird_enFI_GPIO_Port, ird_enFI_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(ird_enFC_GPIO_Port, ird_enFC_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(ird_enFD_GPIO_Port, ird_enFD_Pin, GPIO_PIN_SET);
   HAL_ADCEx_Calibration_Start(&hadc1);
   ADCs_Start();//TODO validar el retorno
-
+  message log;
 
 
   for(;;){
     /* if(pdPASS == (xQueueReceive(sensorsDistQueueHandle,&rx,0))){ */
     /*   SensorDistProcessMessage(rx); */
     /* } */
-    if(pdPASS == (xSemaphoreTake(irdistHandle,100))){
+    if(pdPASS == (xSemaphoreTake(irdistHandle,portMAX_DELAY))){
       //procesar la informacion antes de volver a leer el adc
-      processAdc();
+      //processAdc();
       //rx = createMessage(sensorsDistID, miniId, DIRECTION, findOponent());
-      rx = createMessage(sensorsDistID, miniId, GALLSENSORS, distSensorDataInternal.distDataRaw);
+      rx = createMessage(sensorsDistID, miniId, RAWDATA, 0);
       xQueueSend(miniQueueHandle, &rx, 10);
-      message log = messageDinamicArray(sensorsDistID, serialID, ARRAY, sensorDistDataRaw, sizeof(uint16_t)*ADC_CHANELS);
+      log = messageDinamicArray(sensorsDistID, serialID, ARRAY, sensorDistDataRaw, sizeof(uint16_t)*ADC_CHANELS);
       if(pdPASS != xQueueSend(serialQueueHandle, &log, 0)){
 	vPortFree(log.pointer.array);
       }
+
       vTaskDelay(xPeriod);
       while(HAL_OK != ADCs_Start()){
 	ADCs_Start();
       }
+    }else{
+      //xSemaphoreGive(irdistHandle);
     }
     vTaskDelay(xPeriod);
     //taskYIELD();

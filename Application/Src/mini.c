@@ -4,6 +4,7 @@
 #include "cmsis_os.h"
 #include "usart.h"
 #include "imu.h"
+#include "adc.h"
 #include "packet.h"
 #include "sensorsDist.h"
 #include "sensorsFloor.h"
@@ -13,6 +14,7 @@
 
 volatile long imuHeading = 0;
 sensorDistData distSensorData;
+extern uint16_t sensorDistDataRaw[ADC_CHANELS];
 
 typedef struct {
   long heading;
@@ -20,6 +22,7 @@ typedef struct {
   uint16_t RMotorSpeed;
   uint8_t irFloor;
   sensorDistData irDist;
+  uint16_t irDistData[5];
   int8_t direction;
   uint8_t irCommand;
 }miniStatus;
@@ -46,7 +49,6 @@ void mini(void const * argument){
     if(pdPASS == (xQueueReceive(miniQueueHandle, &rx, 100))){
       miniprocessMessage(&rx);
     }
-    portYIELD();
   }
 }
 
@@ -158,6 +160,8 @@ void sensorsDistMsg(message *rx){
   case DIRECTION:
     status.direction = rx->messageUser.data;
   default:
+  case RAWDATA:
+    memcpy((void *)&status.irDistData[0], sensorDistDataRaw, ADC_CHANELS * sizeof(uint16_t));
     break;
   }
 }

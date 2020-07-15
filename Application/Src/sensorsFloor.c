@@ -39,14 +39,14 @@ void sensorsFloor(void const* argument){
   calibrateSensors();
   //xSemaphoreTake(irflrHandle, portMAX_DELAY);
   for(;;){
-    xSemaphoreTake(irflrHandle, portMAX_DELAY);
+    xSemaphoreTake(irflrHandle, 100);
     procesIrData(sensorFloorDataRaw, &sensorFloorData);
-    //message msg = createMessage(sensorsFloorID, miniId, ALL_SENSORS, sensorFloorData);
-    //xQueueSend(miniQueueHandle, &msg, 10);
-    /* message log = messageDinamicArray(sensorsFloorID, serialID, ARRAY, sensorFloorDataRaw, sizeof(uint16_t)*ADC_CHANELS); */
-    /* if(pdPASS != xQueueSend(serialQueueHandle, &log, 0)){ */
-    /*   vPortFree(log.pointer.array); */
-    /* } */
+    message msg = createMessage(sensorsFloorID, miniId, ALL_SENSORS, sensorFloorData);
+    xQueueSend(miniQueueHandle, &msg, 10);
+    message log = messageDinamicArray(sensorsFloorID, serialID, ARRAY, sensorFloorDataRaw, sizeof(uint16_t)*ADC_CHANELS);
+    if(pdPASS != xQueueSend(serialQueueHandle, &log, 0)){
+      vPortFree(log.pointer.array);
+    }
     xSemaphoreGive(irdistHandle);
   }
 

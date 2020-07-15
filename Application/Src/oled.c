@@ -4,6 +4,7 @@
 #include "u8g2.h"
 #include "imu.h"
 #include "sensorsDist.h"
+#include "sensorsFloor.h"
 #include "stdio.h"
 
 typedef struct {
@@ -12,6 +13,7 @@ typedef struct {
   uint16_t RMotorSpeed;
   uint8_t irFloor;
   sensorDistData irDist;
+  uint16_t irDistData[5];
   int8_t direction;
   uint8_t irCommand;
 }miniStatus;
@@ -28,7 +30,7 @@ void oled(void const * argument){
   uint8_t *buf = (uint8_t*)pvPortMalloc(512);
   buffer = (uint8_t*)pvPortMalloc(32);
   bufferDMA = (uint8_t*)pvPortMalloc(32);
-
+  //while(1){vTaskDelay(1000);}
   u8g2_Setup_ssd1306_i2c_128x32_univision_f(&u8g2, U8G2_R0, u8x8_byte_stm32_hw_i2c, u8x8_stm32_gpio_and_delay);
   u8g2_SetBufferPtr(&u8g2, buf);
   u8g2_SetI2CAddress(&u8g2, 0x3c);
@@ -37,21 +39,66 @@ void oled(void const * argument){
   u8g2_ClearDisplay(&u8g2);
   char msg[15];
   uint8_t i = 0;
+  uint32_t res;
   for(;;){
     u8g2_FirstPage(&u8g2);
     u8g2_SetFont(&u8g2, u8g2_font_t0_11_tr);
     do
       {
-	sprintf(msg, "comando: %d %d", status.irCommand, i++);
-	u8g2_DrawStr(&u8g2, 0, 8, msg);
-	u8g2_DrawFrame(&u8g2, 1, 3, 24, i);
-	u8g2_DrawFrame(&u8g2, 26, 3, 24, i);
-	u8g2_DrawFrame(&u8g2, 51, 3, 24, i);
-	u8g2_DrawFrame(&u8g2, 76, 3, 24, i);
-	u8g2_DrawFrame(&u8g2, 101, 3, 24, i);
+	sprintf(msg, "dir: %d", status.irFloor);
+	u8g2_DrawStr(&u8g2, 70, 8, msg);
+	res = map(status.irDistData[LIPOS], 0, 4095, 0, 32);
+	u8g2_DrawFrame(&u8g2, 1, res, 12, 32-res);
+
+	res = map(status.irDistData[FDPOS], 0, 4095, 0, 32);
+	u8g2_DrawFrame(&u8g2, 14, res, 12, 32-res);
+
+	res = map(status.irDistData[FCPOS], 0, 4095, 0, 32);
+	u8g2_DrawFrame(&u8g2, 28, res, 12, 32-res);
+
+	res = map(status.irDistData[FIPOS], 0, 4095, 0, 32);
+	u8g2_DrawFrame(&u8g2, 42, res, 12, 32-res);
+
+	res = map(status.irDistData[LDPOS], 0, 4095, 0, 32);
+	u8g2_DrawFrame(&u8g2, 56, res, 12, 32-res);
 	i = (i+1) % 28;
+
+
+	u8g2_DrawFrame(&u8g2, 75, 10, 25, 22);
+
+	if(status.irFloor & IRPFI){
+	  u8g2_DrawBox(&u8g2, 77, 12, 5, 5);
+	}else{
+	  u8g2_DrawFrame(&u8g2, 77, 12, 5, 5);
+	}
+
+	if(status.irFloor & IRPFD){
+	  u8g2_DrawBox(&u8g2, 93, 12, 5, 5);
+	}else{
+	  u8g2_DrawFrame(&u8g2, 93, 12, 5, 5);
+	}
+
+	if(status.irFloor & IRPAI){
+	  u8g2_DrawBox(&u8g2, 77, 25, 5, 5);
+	}else{
+	  u8g2_DrawFrame(&u8g2, 77, 25, 5, 5);
+	}
+
+	if(status.irFloor & IRPAC){
+	  u8g2_DrawBox(&u8g2, 93, 25, 5, 5);
+	}else{
+	  u8g2_DrawFrame(&u8g2, 93, 25, 5, 5);
+	}
+
+	if(status.irFloor & IRPAD){
+	  u8g2_DrawBox(&u8g2, 85, 25, 5, 5);
+	}else{
+	  u8g2_DrawFrame(&u8g2, 85, 25, 5, 5);
+	}
+
+
       } while (u8g2_NextPage(&u8g2));
-    //vTaskDelay(40);
+    // vTaskDelay(40);
   }
 }
 

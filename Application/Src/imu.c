@@ -155,11 +155,11 @@ void read_from_mpl(void){
   }
 
   if (hal.report & PRINT_HEADING) {
-    //message tx = createMessage(imuId, miniId, HEADING, 0);
+    message tx = createMessage(imuId, miniId, HEADING, 0);
     if (inv_get_sensor_type_heading(data, &accuracy, (inv_time_t*)&timestamp)){
       eMPL_send_data(PACKET_DATA_HEADING, data);
       imuHeading = data[0] * 1.0 / (1<<16);
-      //xQueueSend(miniQueueHandle, &tx, 10);
+      xQueueSend(miniQueueHandle, &tx, 10);
     }
   }
 
@@ -944,11 +944,12 @@ uint8_t init = 1;
 
 void imu(void const * argument){
   UNUSED(argument);
-  //HAL_Delay(100);
+
   //xSemaphoreGive(imuSemHandle);
   //int res = imuInit();
   //while(1){vTaskDelay(1000);}
   taskENTER_CRITICAL();
+  HAL_Delay(100);
   if(imuInit() < 0){
     MPL_LOGE("Could not initialize IMU.\r\n");
     //while(1);
@@ -988,7 +989,8 @@ uint8_t Sensors_I2C_WriteRegister(unsigned char slave_addr, unsigned char reg_ad
     return res;
   }
   xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
-  uint8_t res = (HAL_OK == HAL_I2C_Mem_Write_IT(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length) ? 0 : 1);
+  uint8_t res = (HAL_OK == HAL_I2C_Mem_Write(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 1000) ? 0 : 1);
+  xSemaphoreGive(i2cSemHandle);
   return res;
 }
 
@@ -998,7 +1000,8 @@ uint8_t Sensors_I2C_ReadRegister(unsigned char slave_addr, unsigned char reg_add
     return res;
   }
   xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
-  uint8_t res = (HAL_OK == HAL_I2C_Mem_Read_IT(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length)? 0 : 1);
+  uint8_t res = (HAL_OK == HAL_I2C_Mem_Read(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 1000)? 0 : 1);
+  xSemaphoreGive(i2cSemHandle);
   return res;
 }
 
@@ -1063,71 +1066,71 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
       portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     }
   }
-  else if(GPIO_Pin == irReceiver_Pin){
-    uint32_t lastcount = 0;
-    extern volatile uint16_t usec;
-    static volatile uint32_t count = 0;
-    static volatile int32_t state = -1;
-    static uint32_t bit[70]; //TODO optimizar arreglo
-    static uint8_t address = 0;
-    static uint8_t inverseAddress = 0;
-    static uint8_t command = 0;
-    static uint8_t inverseCommand = 0;
-    static uint8_t counter = 0;
-    __HAL_TIM_DISABLE(&htim3);
-    if(usec == 0){state=-1;}
-    switch(state){
-    case -1:
-      usec = 0; HAL_TIM_Base_Start_IT(&htim3);
-      state++;
-      counter=0;
+  /* else if(GPIO_Pin == irReceiver_Pin){ */
+  /*   uint32_t lastcount = 0; */
+  /*   extern volatile uint16_t usec; */
+  /*   static volatile uint32_t count = 0; */
+  /*   static volatile int32_t state = -1; */
+  /*   static uint32_t bit[70]; //TODO optimizar arreglo */
+  /*   static uint8_t address = 0; */
+  /*   static uint8_t inverseAddress = 0; */
+  /*   static uint8_t command = 0; */
+  /*   static uint8_t inverseCommand = 0; */
+  /*   static uint8_t counter = 0; */
+  /*   __HAL_TIM_DISABLE(&htim3); */
+  /*   if(usec == 0){state=-1;} */
+  /*   switch(state){ */
+  /*   case -1: */
+  /*     usec = 0; HAL_TIM_Base_Start_IT(&htim3); */
+  /*     state++; */
+  /*     counter=0; */
 
-    case 0:
-      count = usec;
-      state++;
-      break;
-    case 1: //leyendo bit
-      lastcount = count;
-      count = usec;
-      //      __HAL_TIM_DISABLE(&htim3);
-      bit[counter] = get_Delta(lastcount, count);
-      if(bit[0] > 700 && bit[0] < 1100){// inicio de datos
-	counter++;
-      }else{
-	counter = 0;
-	state = 1;
-      }
-      if(counter == 2){
-	if(bit[1] < 200 || bit[1] > 500){
-	  counter = 0;
-	  state = 1;
-	}
-      }
-      if(counter > 2 && bit[counter-1] >470){
-	state=-1; bit[counter-1] = 0;
-      }
-      break;
-    }
-    if(counter >= 66){
-      counter = 0; count=0;
-      address = getAddress(&(bit[2]));
-      inverseAddress= getAddress(&(bit[18])) ^ 0xFF;
-      command = getAddress(&(bit[34]));
-      inverseCommand = getAddress(&(bit[50])) ^ 0xFF;
-      if(address == inverseAddress && command == inverseCommand){
-	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
-	message tx = createMessage(irID, miniId, COMMAND, command);
-	xQueueSendFromISR(miniQueueHandle, &tx, &xHigherPriorityTaskWoken);
-	state = -1;
-	HAL_TIM_Base_Stop_IT(&htim3);
-	__HAL_TIM_SET_COUNTER(&htim3, 0);
-	usec = 0;
-	if(pdPASS == xHigherPriorityTaskWoken){
-	  portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
-	}
-      }
-      state = -1;
-    }
-    __HAL_TIM_ENABLE(&htim3);
-  }
+  /*   case 0: */
+  /*     count = usec; */
+  /*     state++; */
+  /*     break; */
+  /*   case 1: //leyendo bit */
+  /*     lastcount = count; */
+  /*     count = usec; */
+  /*     //      __HAL_TIM_DISABLE(&htim3); */
+  /*     bit[counter] = get_Delta(lastcount, count); */
+  /*     if(bit[0] > 700 && bit[0] < 1100){// inicio de datos */
+  /*	counter++; */
+  /*     }else{ */
+  /*	counter = 0; */
+  /*	state = 1; */
+  /*     } */
+  /*     if(counter == 2){ */
+  /*	if(bit[1] < 200 || bit[1] > 500){ */
+  /*	  counter = 0; */
+  /*	  state = 1; */
+  /*	} */
+  /*     } */
+  /*     if(counter > 2 && bit[counter-1] >470){ */
+  /*	state=-1; bit[counter-1] = 0; */
+  /*     } */
+  /*     break; */
+  /*   } */
+  /*   if(counter >= 66){ */
+  /*     counter = 0; count=0; */
+  /*     address = getAddress(&(bit[2])); */
+  /*     inverseAddress= getAddress(&(bit[18])) ^ 0xFF; */
+  /*     command = getAddress(&(bit[34])); */
+  /*     inverseCommand = getAddress(&(bit[50])) ^ 0xFF; */
+  /*     if(address == inverseAddress && command == inverseCommand){ */
+  /*	BaseType_t xHigherPriorityTaskWoken = pdFALSE; */
+  /*	message tx = createMessage(irID, miniId, COMMAND, command); */
+  /*	xQueueSendFromISR(miniQueueHandle, &tx, &xHigherPriorityTaskWoken); */
+  /*	state = -1; */
+  /*	HAL_TIM_Base_Stop_IT(&htim3); */
+  /*	__HAL_TIM_SET_COUNTER(&htim3, 0); */
+  /*	usec = 0; */
+  /*	if(pdPASS == xHigherPriorityTaskWoken){ */
+  /*	  portYIELD_FROM_ISR(xHigherPriorityTaskWoken); */
+  /*	} */
+  /*     } */
+  /*     state = -1; */
+  /*   } */
+  /*   __HAL_TIM_ENABLE(&htim3); */
+  /* } */
 }

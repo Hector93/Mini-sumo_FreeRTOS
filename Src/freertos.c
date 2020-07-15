@@ -55,7 +55,7 @@
 #include "cmsis_os.h"
 
 /* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */     
+/* USER CODE BEGIN Includes */
 //#include "message.h"
 #include "../Application/Inc/message.h"
 #include "usart.h"
@@ -254,7 +254,7 @@ void MX_FREERTOS_Init(void) {
   minisumoHandle = osThreadCreate(osThread(minisumo), NULL);
 
   /* definition and creation of oledDis */
-  osThreadDef(oledDis, oled, osPriorityNormal, 0, 128);
+  osThreadDef(oledDis, oled, osPriorityNormal, 0, 256);
   oledDisHandle = osThreadCreate(osThread(oledDis), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */

@@ -13,4 +13,6 @@
 
 extern osMessageQId miniQueueHandle;
 extern osSemaphoreId miniSemHandle;
+
+
 #endif

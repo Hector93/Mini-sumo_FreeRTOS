@@ -20,16 +20,17 @@
 #define FDID 8
 #define LDID 16
 
-#define LIPOS 0
-#define FIPOS 1
-#define FCPOS 2
-#define FDPOS 3
-#define LDPOS 4
+#define LIPOS 1
+#define FIPOS 4
+#define FCPOS 3
+#define FDPOS 2
+#define LDPOS 0
 
 //type definitions
 //#define getSensor      1
 #define DIRECTION    1
 #define GALLSENSORS  2
+#define RAWDATA      3
 //#define setReading     3
 #define setSensor      4
 #define getStatus      5

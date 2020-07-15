@@ -136,9 +136,6 @@ void Error_Handler(void);
 #define TX_GPIO_Port GPIOA
 #define RX_Pin GPIO_PIN_10
 #define RX_GPIO_Port GPIOA
-#define irReceiver_Pin GPIO_PIN_11
-#define irReceiver_GPIO_Port GPIOA
-#define irReceiver_EXTI_IRQn EXTI15_10_IRQn
 #define led_Pin GPIO_PIN_12
 #define led_GPIO_Port GPIOA
 #define intAcel_Pin GPIO_PIN_15
