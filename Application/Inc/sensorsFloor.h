@@ -24,9 +24,9 @@
 extern osThreadId sensorFloorHandle;
 extern osSemaphoreId irflrHandle;
 
-#define IRPFI 1
+#define IRPAI 1
 #define IRPFD 2
-#define IRPAI 4
+#define IRPFI 4
 #define IRPAC 8
 #define IRPAD 16
 
