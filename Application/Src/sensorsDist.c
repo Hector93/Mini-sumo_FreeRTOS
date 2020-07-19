@@ -24,7 +24,7 @@ void sensorsDist(void const* argument){
   UNUSED(argument);
   message rx;
   taskYIELD();
-  const TickType_t xPeriod = pdMS_TO_TICKS( 8);
+  const TickType_t xPeriod = pdMS_TO_TICKS( 10);
   xSemaphoreTake(irdistHandle,portMAX_DELAY);
   sensorDistStatus = 31; //by default all sensors are started
   HAL_GPIO_WritePin(ird_enLD_GPIO_Port, ird_enLD_Pin, GPIO_PIN_SET);
