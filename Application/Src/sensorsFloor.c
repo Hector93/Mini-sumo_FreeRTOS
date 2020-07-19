@@ -68,8 +68,8 @@ void procesIrData(const uint16_t* rawData, uint8_t* irData){
 void calibrateSensors(){
   sensorFloorData = 0;
   for(uint8_t i = 0; i < ADC_CHANELS; i++){
-    thresholds[i].Low = 3072;
-    thresholds[i].High = 1024;
+    thresholds[i].Low = 3000;
+    thresholds[i].High = 1000;
   }
   /*
     for(uint8_t i = 0; i < 20; i++){
