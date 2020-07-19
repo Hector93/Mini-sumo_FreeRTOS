@@ -55,7 +55,7 @@
 #include "cmsis_os.h"
 
 /* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
+/* USER CODE BEGIN Includes */     
 //#include "message.h"
 #include "../Application/Inc/message.h"
 #include "usart.h"
@@ -122,6 +122,35 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* GetIdleTaskMemory prototype (linked to static allocation support) */
 void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize );
+
+/* Hook prototypes */
+void vApplicationStackOverflowHook(TaskHandle_t xTask, signed char *pcTaskName);
+void vApplicationMallocFailedHook(void);
+
+/* USER CODE BEGIN 4 */
+__weak void vApplicationStackOverflowHook(TaskHandle_t xTask, signed char *pcTaskName)
+{
+   /* Run time stack overflow checking is performed if
+   configCHECK_FOR_STACK_OVERFLOW is defined to 1 or 2. This hook function is
+   called if a stack overflow is detected. */
+}
+/* USER CODE END 4 */
+
+/* USER CODE BEGIN 5 */
+__weak void vApplicationMallocFailedHook(void)
+{
+   /* vApplicationMallocFailedHook() will only be called if
+   configUSE_MALLOC_FAILED_HOOK is set to 1 in FreeRTOSConfig.h. It is a hook
+   function that will get called if a call to pvPortMalloc() fails.
+   pvPortMalloc() is called internally by the kernel whenever a task, queue,
+   timer or semaphore is created. It is also called by various parts of the
+   demo application. If heap_1.c or heap_2.c are used, then the size of the
+   heap available to pvPortMalloc() is defined by configTOTAL_HEAP_SIZE in
+   FreeRTOSConfig.h, and the xPortGetFreeHeapSize() API function can be used
+   to query the size of free heap space that remains (although it does not
+   provide information on how the remaining heap might be fragmented). */
+}
+/* USER CODE END 5 */
 
 /* USER CODE BEGIN GET_IDLE_TASK_MEMORY */
 static StaticTask_t xIdleTaskTCBBuffer;
@@ -211,7 +240,7 @@ void MX_FREERTOS_Init(void) {
   imuQueueHandle = osMessageCreate(osMessageQ(imuQueue), NULL);
 
   /* definition and creation of miniQueue */
-  osMessageQDef(miniQueue, 3, message);
+  osMessageQDef(miniQueue, 4, message);
   miniQueueHandle = osMessageCreate(osMessageQ(miniQueue), NULL);
 
   /* USER CODE BEGIN RTOS_QUEUES */
@@ -226,11 +255,11 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* definition and creation of motorD */
-  osThreadDef(motorD, motorR, osPriorityNormal, 0, 64);
+  osThreadDef(motorD, motorR, osPriorityHigh, 0, 64);
   motorDHandle = osThreadCreate(osThread(motorD), NULL);
 
   /* definition and creation of motorI */
-  osThreadDef(motorI, motorL, osPriorityNormal, 0, 64);
+  osThreadDef(motorI, motorL, osPriorityHigh, 0, 64);
   motorIHandle = osThreadCreate(osThread(motorI), NULL);
 
   /* definition and creation of usart */
@@ -246,11 +275,11 @@ void MX_FREERTOS_Init(void) {
   sensorDistHandle = osThreadCreate(osThread(sensorDist), NULL);
 
   /* definition and creation of acelerometro */
-  osThreadDef(acelerometro, imu, osPriorityAboveNormal, 0, 128);
+  osThreadDef(acelerometro, imu, osPriorityAboveNormal, 0, 256);
   acelerometroHandle = osThreadCreate(osThread(acelerometro), NULL);
 
   /* definition and creation of minisumo */
-  osThreadDef(minisumo, mini, osPriorityNormal, 0, 64);
+  osThreadDef(minisumo, mini, osPriorityRealtime, 0, 64);
   minisumoHandle = osThreadCreate(osThread(minisumo), NULL);
 
   /* definition and creation of oledDis */

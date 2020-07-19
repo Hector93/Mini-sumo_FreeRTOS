@@ -58,7 +58,7 @@ void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_0;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_71CYCLES_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_239CYCLES_5;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -119,7 +119,7 @@ void MX_ADC2_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_5;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_71CYCLES_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_239CYCLES_5;
   if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -192,8 +192,8 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
     hdma_adc1.Init.MemInc = DMA_MINC_ENABLE;
     hdma_adc1.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
     hdma_adc1.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
-    hdma_adc1.Init.Mode = DMA_NORMAL;
-    hdma_adc1.Init.Priority = DMA_PRIORITY_HIGH;
+    hdma_adc1.Init.Mode = DMA_CIRCULAR;
+    hdma_adc1.Init.Priority = DMA_PRIORITY_VERY_HIGH;
     if (HAL_DMA_Init(&hdma_adc1) != HAL_OK)
     {
       Error_Handler();
@@ -325,46 +325,20 @@ extern uint16_t sensorFloorDataRaw[ADC_CHANELS];
 
 void extractRawData(){
   ADCFilter filter;
-  uint8_t update=1;
-  BaseType_t xHigherPriorityTaskWoken = pdFALSE;
-  /* if(pdFAIL == xSemaphoreTakeFromISR(irdistHandle, &xHigherPriorityTaskWoken)){ */
-  /*   update |= 1; */
-  /* }else{ */
-  /*   // while(1); */
-  /* } */
-  xHigherPriorityTaskWoken = pdFALSE;
-  if(pdFAIL == xSemaphoreTakeFromISR(irflrHandle, &xHigherPriorityTaskWoken)){
-    update |= 2; 
-  }else{
-    // while(1);// se supone que no entraba aqui D':
-  }    
-     
   for(uint32_t i = 0; i < ADC_CHANELS; i++){
     filter.rawADC = ADCsSensorData[i];
-    if( update & 1){
-      sensorDistDataRaw[i] = filter.ADCUnion.ADC_one;
-    }
-
-    if(update & 2){
-      sensorFloorDataRaw[i] = filter.ADCUnion.ADC_two;  
-    }
-    
+    sensorDistDataRaw[i] = filter.ADCUnion.ADC_one;
+    sensorFloorDataRaw[i] = filter.ADCUnion.ADC_two;
   }
-  
 }
 
 HAL_StatusTypeDef ADCs_Start(){
-  return  HAL_ADCEx_MultiModeStart_DMA(&hadc1, ADCsSensorData, 5); 
+  return  HAL_ADCEx_MultiModeStart_DMA(&hadc1, ADCsSensorData, 5);
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
   extractRawData();
-  if(hadc->Instance == ADC1){
-    //SensorsDistInterrupt(hadc);
-    SensorsFloorInterrupt(hadc);
-  }else if(hadc->Instance == ADC2){
-    //    SensorsFloorInterrupt(hadc);
-  }
+  SensorsFloorInterrupt(hadc);
 }
 /* USER CODE END 1 */
 
