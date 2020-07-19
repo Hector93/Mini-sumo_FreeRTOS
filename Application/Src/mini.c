@@ -161,7 +161,10 @@ void sensorsDistMsg(message *rx){
     status.direction = rx->messageUser.data;
   default:
   case RAWDATA:
-    memcpy((void *)&status.irDistData[0], sensorDistDataRaw, ADC_CHANELS * sizeof(uint16_t));
+    for(uint8_t i = 0; i < ADC_CHANELS; i++){
+      status.irDistData[i] = sensorDistDataRaw[i];
+    }
+    //memcpy(status.irDistData, sensorDistDataRaw, ADC_CHANELS * sizeof(uint16_t));
     break;
   }
 }
