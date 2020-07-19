@@ -45,7 +45,7 @@ void oled(void const * argument){
     u8g2_SetFont(&u8g2, u8g2_font_t0_11_tr);
     do
       {
-	sprintf(msg, "dir: %d", status.irFloor);
+	sprintf(msg, "dir: %ld", status.heading);
 	u8g2_DrawStr(&u8g2, 70, 8, msg);
 	res = map(status.irDistData[LIPOS], 0, 4095, 0, 32);
 	u8g2_DrawFrame(&u8g2, 1, res, 12, 32-res);
