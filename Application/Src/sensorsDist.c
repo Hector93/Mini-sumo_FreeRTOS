@@ -1,3 +1,4 @@
+#include "string.h"
 #include "serial.h"
 #include "message.h"
 #include "sensorsDist.h"
@@ -33,7 +34,7 @@ void sensorsDist(void const* argument){
   HAL_GPIO_WritePin(ird_enFD_GPIO_Port, ird_enFD_Pin, GPIO_PIN_SET);
   HAL_ADCEx_Calibration_Start(&hadc1);
   ADCs_Start();//TODO validar el retorno
-  message log;
+
 
 
   for(;;){
@@ -46,19 +47,18 @@ void sensorsDist(void const* argument){
       //rx = createMessage(sensorsDistID, miniId, DIRECTION, findOponent());
       rx = createMessage(sensorsDistID, miniId, RAWDATA, 0);
       xQueueSend(miniQueueHandle, &rx, 10);
+#ifdef PRINT_DIST_DATA
+      message log;
       log = messageDinamicArray(sensorsDistID, serialID, ARRAY, sensorDistDataRaw, sizeof(uint16_t)*ADC_CHANELS);
       if(pdPASS != xQueueSend(serialQueueHandle, &log, 0)){
 	vPortFree(log.pointer.array);
       }
-
+#endif
       vTaskDelay(xPeriod);
       while(HAL_OK != ADCs_Start()){
-	ADCs_Start();
+	//ADCs_Start();
       }
-    }else{
-      //xSemaphoreGive(irdistHandle);
     }
-    vTaskDelay(xPeriod);
     //taskYIELD();
   }
 
