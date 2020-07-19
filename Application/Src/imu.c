@@ -949,7 +949,7 @@ void imu(void const * argument){
   //int res = imuInit();
   //while(1){vTaskDelay(1000);}
   taskENTER_CRITICAL();
-  HAL_Delay(100);
+  HAL_Delay(300);
   if(imuInit() < 0){
     MPL_LOGE("Could not initialize IMU.\r\n");
     //while(1);
