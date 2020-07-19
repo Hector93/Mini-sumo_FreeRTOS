@@ -43,10 +43,12 @@ void sensorsFloor(void const* argument){
     procesIrData(sensorFloorDataRaw, &sensorFloorData);
     message msg = createMessage(sensorsFloorID, miniId, ALL_SENSORS, sensorFloorData);
     xQueueSend(miniQueueHandle, &msg, 10);
+#ifdef PRINT_FLOR_DATA
     message log = messageDinamicArray(sensorsFloorID, serialID, ARRAY, sensorFloorDataRaw, sizeof(uint16_t)*ADC_CHANELS);
     if(pdPASS != xQueueSend(serialQueueHandle, &log, 0)){
       vPortFree(log.pointer.array);
     }
+#endif
     xSemaphoreGive(irdistHandle);
   }
 
