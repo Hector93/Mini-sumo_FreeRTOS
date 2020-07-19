@@ -39,7 +39,8 @@ void sensorsFloor(void const* argument){
   calibrateSensors();
   //xSemaphoreTake(irflrHandle, portMAX_DELAY);
   for(;;){
-    xSemaphoreTake(irflrHandle, 100);
+
+    xSemaphoreTake(irflrHandle, portMAX_DELAY);
     procesIrData(sensorFloorDataRaw, &sensorFloorData);
     message msg = createMessage(sensorsFloorID, miniId, ALL_SENSORS, sensorFloorData);
     xQueueSend(miniQueueHandle, &msg, 10);
