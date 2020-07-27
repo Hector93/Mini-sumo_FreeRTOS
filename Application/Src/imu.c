@@ -135,6 +135,7 @@ static struct platform_data_s compass_pdata = {
  */
 long data[9];
 extern volatile long imuHeading;
+long imuHeadingInternal;
 void read_from_mpl(void){
   long msg;
   float float_data[3] = {0};
@@ -155,11 +156,11 @@ void read_from_mpl(void){
   }
 
   if (hal.report & PRINT_HEADING) {
-    message tx = createMessage(imuId, miniId, HEADING, 0);
+    //message tx = createMessage(imuId, miniId, HEADING, 0);
     if (inv_get_sensor_type_heading(data, &accuracy, (inv_time_t*)&timestamp)){
       eMPL_send_data(PACKET_DATA_HEADING, data);
-      imuHeading = data[0] * 1.0 / (1<<16);
-      xQueueSend(miniQueueHandle, &tx, 10);
+      imuHeadingInternal = data[0] * 1.0 / (1<<16);
+      //xQueueSend(miniQueueHandle, &tx, 10);
     }
   }
 
@@ -944,7 +945,9 @@ uint8_t init = 1;
 
 void imu(void const * argument){
   UNUSED(argument);
-
+  uint32_t prevtime;
+  long prevHeading = imuHeadingInternal;
+  int8_t validations = -3;
   //xSemaphoreGive(imuSemHandle);
   //int res = imuInit();
   //while(1){vTaskDelay(1000);}
@@ -958,7 +961,7 @@ void imu(void const * argument){
   init = 0;
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
   //while(1);
-
+  prevtime = xTaskGetTickCount();
   for(;;){
     //    message rx;
     //    if(pdPASS == (xQueueReceive(imuQueueHandle, &rx, 0))){
@@ -975,10 +978,24 @@ void imu(void const * argument){
 	 * rate requested by the host.
 	 */
 	read_from_mpl();
+	if(validations != 0){
+	  if(xTaskGetTickCount() - prevtime > 1000){
+	    prevtime = xTaskGetTickCount();
+	    if(prevHeading == imuHeadingInternal){
+	      validations++;
+	    }
+	    prevHeading = imuHeadingInternal;
+	  }
+	  imuHeading = validations;
+	}else{
+	  imuHeading = imuHeadingInternal;
+	}
+	message tx = createMessage(imuId, miniId, HEADING, 0);
+	xQueueSend(miniQueueHandle, &tx, 10);
       }
+      //taskYIELD();
+      //vTaskDelay(100);
     }
-    //taskYIELD();
-    //vTaskDelay(100);
   }
 }
 

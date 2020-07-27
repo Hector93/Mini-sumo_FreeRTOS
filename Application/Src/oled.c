@@ -45,8 +45,27 @@ void oled(void const * argument){
     u8g2_SetFont(&u8g2, u8g2_font_t0_11_tr);
     do
       {
-	sprintf(msg, "dir: %ld", status.heading);
-	u8g2_DrawStr(&u8g2, 70, 8, msg);
+	if(status.heading < 0){
+	  extern long imuHeadingInternal;
+	  u8g2_DrawFrame(&u8g2, 70, 0, 35, 8);
+	  sprintf(msg, "%ld", imuHeadingInternal);
+	  u8g2_DrawStr(&u8g2, 107, 8, msg);
+	  switch(status.heading){
+	  case -3:
+	    u8g2_DrawBox(&u8g2, 70, 0, 12, 8);
+	    break;
+	  case -2:
+	    u8g2_DrawBox(&u8g2, 70, 0, 24, 8);
+	    break;
+	  case -1:
+	    u8g2_DrawBox(&u8g2, 70, 0, 35, 8);
+	    break;
+	  }
+	}else{
+	  sprintf(msg, "dir: %ld", status.heading);
+	  u8g2_DrawStr(&u8g2, 70, 8, msg);
+	}
+
 	res = map(status.irDistData[LIPOS], 0, 4095, 0, 32);
 	u8g2_DrawFrame(&u8g2, 1, res, 12, 32-res);
 
