@@ -95,8 +95,8 @@ struct platform_data_s {
  */
 static struct platform_data_s gyro_pdata = {
 					    .orientation = { 1, 0, 0,
-							     0, 1, 0,
-							     0, 0, 1}
+							     0, -1, 0,
+							     0, 0, -1}
 };
 
 #if defined MPU9150 || defined MPU9250
