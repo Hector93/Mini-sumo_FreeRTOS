@@ -9,7 +9,7 @@
 //F3 3 20 2 orgien destino type speed direction
 
 motorInternalData motorProcessMessage(message msg,motorInternalData data);
-motorInternalData motorUpdate(motorInternalData newData, motorInternalData prevData);
+motorInternalData motorUpdate(motorInternalData newData);
 void motorDirectionInternal(motorInternalData data);
 void motorSpeedInternal(motorInternalData data);
 
@@ -21,23 +21,24 @@ void motorR(const void* argument){
   message rx;
   //rx = createMessage(15,2,5,0);
 
-  status.motorOpt.speed = 0;
-  status.motorOpt.direction = STOPEDHARD;
+  status.motorOpt.speed = 250;
+  status.motorOpt.direction = FORWARD;
   status.motorOpt.channel = motorRID;
 
   HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_2);
 
-  HAL_GPIO_WritePin(ph_1A_GPIO_Port,ph_1A_Pin,GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(ph_1B_GPIO_Port,ph_1B_Pin,GPIO_PIN_RESET);
+  //HAL_GPIO_WritePin(ph_1A_GPIO_Port,ph_1A_Pin,GPIO_PIN_RESET);
+  //HAL_GPIO_WritePin(ph_1B_GPIO_Port,ph_1B_Pin,GPIO_PIN_RESET);
   //status = motorUpdate(motorProcessMessage(rx,status),status);
-  status = motorUpdate(status,status);
+  //status = motorUpdate(status,status);
 
   for(;;)
     {
       //xQueueSend(serialQueueHandle,&tx,100);
       //taskYIELD();
       if(pdPASS ==(xQueueReceive(motorRQueueHandle,&rx,10))){
-	status = motorUpdate(motorProcessMessage(rx,status),status);
+
+	status = motorUpdate(motorProcessMessage(rx,status));
       }
     }
 }
@@ -50,16 +51,16 @@ void motorL(const void* argument){
   message rx;
   //rx = createMessage(15,3,5,0);
 
-  status.motorOpt.speed = 0;
-  status.motorOpt.direction = STOPEDHARD;
+  status.motorOpt.speed = 100;
+  status.motorOpt.direction = FORWARD;
   status.motorOpt.channel = motorLID;
 
 
   HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_3);
-  HAL_GPIO_WritePin(ph_2A_GPIO_Port,ph_2A_Pin,GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(ph_2B_GPIO_Port,ph_2B_Pin,GPIO_PIN_RESET);
+  //HAL_GPIO_WritePin(ph_2A_GPIO_Port,ph_2A_Pin,GPIO_PIN_RESET);
+  //HAL_GPIO_WritePin(ph_2B_GPIO_Port,ph_2B_Pin,GPIO_PIN_RESET);
   //status = motorUpdate(motorProcessMessage(rx,status),status);
-  status = motorUpdate(status,status);
+  //status = motorUpdate(status,status);
 
   for(;;)
     {
@@ -67,7 +68,7 @@ void motorL(const void* argument){
       //taskYIELD();
       //     HAL_UART_Transmit(&huart1,"hola motors\r\n",13,10);
       if(pdPASS ==(xQueueReceive(motorLQueueHandle,&rx,10))){
-	status = motorUpdate(motorProcessMessage(rx,status),status);
+	status = motorUpdate(motorProcessMessage(rx,status));
       }
 
 
@@ -97,6 +98,8 @@ motorInternalData motorProcessMessage(message msg,motorInternalData data){
   case setDirection:
     aux.motorData = msg.messageUser.data;
     data.motorOpt.direction = aux.motorOpt.direction;
+    data.motorOpt.speed = aux.motorOpt.speed;
+    motorSpeedInternal(aux);
     return data;
   case setSpeed:
     aux.motorData = msg.messageUser.data;
@@ -121,7 +124,7 @@ motorInternalData motorProcessMessage(message msg,motorInternalData data){
   }
 }
 
-motorInternalData motorUpdate(motorInternalData newData, motorInternalData prevData){
+motorInternalData motorUpdate(motorInternalData newData){
   motorDirectionInternal(newData);
   return newData;
 }
@@ -174,15 +177,16 @@ void motorDirectionInternal(motorInternalData data){
   }
 }
 
-uint16_t createMotorData(uint8_t speed,uint8_t direction){
+uint16_t createMotorData(uint8_t speed,uint8_t direction, uint8_t channel){
   motorInternalData aux;
   aux.motorOpt.speed = speed;
   aux.motorOpt.direction = direction;
+  aux.motorOpt.channel = channel;
   return aux.motorData;
 }
-uint16_t motorSpeed(uint8_t speed){
-  return createMotorData(speed,0);
+uint16_t motorSpeed(uint8_t speed, uint8_t channel){
+  return createMotorData(speed,0, channel);
 }
-uint16_t motorDirection(uint8_t direction){
-  return createMotorData(0,direction);
+uint16_t motorDirection(uint8_t direction, uint8_t channel){
+  return createMotorData(0,direction, channel);
 }

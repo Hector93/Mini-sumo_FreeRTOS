@@ -42,8 +42,8 @@ extern "C" {
     uint16_t motorData;
     struct {
       uint8_t speed;
-      uint8_t direction;
-      uint8_t channel;
+      uint8_t direction:2;
+      uint8_t channel:6;
     }motorOpt;
   }motorInternalData;
 
@@ -54,7 +54,7 @@ extern "C" {
   void motorL(void const* argument); //funcion que controla el proceso, esta definida en freertos.c
   uint16_t map(uint8_t speed);
   uint8_t unMap(uint16_t speed);
-  uint16_t createMotorData(uint8_t speed,uint8_t direction);
-  uint16_t motorSpeed(uint8_t speed);
-  uint16_t motorDirection(uint8_t direction);
+  uint16_t createMotorData(uint8_t speed,uint8_t direction, uint8_t channel);
+  uint16_t motorSpeed(uint8_t speed, uint8_t channel);
+  uint16_t motorDirection(uint8_t direction, uint8_t channel);
 #endif
