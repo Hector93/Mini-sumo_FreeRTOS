@@ -43,10 +43,11 @@ void mini(void const * argument){
   HAL_GPIO_WritePin(buzer_GPIO_Port, buzer_Pin, GPIO_PIN_RESET);
   HAL_TIM_Base_Start_IT(&htim3);
   //Fuzzy* c = newFuzzy();
+  status.heading = -1;
   message rx, tx;
   uint8_t vel = 255;
   for(;;){
-    if(pdPASS == (xQueueReceive(miniQueueHandle, &rx, 100))){
+    if(pdPASS == (xQueueReceive(miniQueueHandle, &rx, 1))){
       miniprocessMessage(&rx);
     }
   }
