@@ -162,11 +162,9 @@ uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,
   switch (msg)
     {
     case U8X8_MSG_GPIO_AND_DELAY_INIT:
-      //HAL_Delay(1);
       vTaskDelay(pdMS_TO_TICKS(1));
       break;
     case U8X8_MSG_DELAY_MILLI:
-      //HAL_Delay(arg_int);
       vTaskDelay(pdMS_TO_TICKS(arg_int));
       break;
     case U8X8_MSG_GPIO_DC:
