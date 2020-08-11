@@ -138,22 +138,48 @@ void motorSpeedInternal(motorInternalData data){
 void motorDirectionInternal(motorInternalData data){
   switch(data.motorOpt.direction){
   case FORWARD:
-    //    HAL_UART_Transmit(&huart1,"proc motorR\r\n",13,10);
     if(data.motorOpt.channel == motorRID){
+      if(data.motorOpt.direction == BACKWARDS){
+	motorInternalData aux;
+	aux.motorOpt.direction = STOPEDHARD;
+	aux.motorOpt.channel = motorRID;
+	motorDirectionInternal(aux);
+	//vTaskDelay(10);
+      }
       HAL_GPIO_WritePin(ph_1A_GPIO_Port,ph_1A_Pin,GPIO_PIN_SET);
       HAL_GPIO_WritePin(ph_1B_GPIO_Port,ph_1B_Pin,GPIO_PIN_RESET);
     }else if(data.motorOpt.channel == motorLID){
+      if(data.motorOpt.direction == BACKWARDS){
+	motorInternalData aux;
+	aux.motorOpt.direction = STOPEDHARD;
+	aux.motorOpt.channel = motorLID;
+	motorDirectionInternal(aux);
+	//vTaskDelay(10);
+      }
       HAL_GPIO_WritePin(ph_2A_GPIO_Port,ph_2A_Pin,GPIO_PIN_SET);
       HAL_GPIO_WritePin(ph_2B_GPIO_Port,ph_2B_Pin,GPIO_PIN_RESET);
     }
     motorSpeedInternal(data);
     break;
   case BACKWARDS:
-    //    HAL_UART_Transmit(&huart1,"backwards motor \r\n",13,10);
     if(data.motorOpt.channel == motorRID){
+      if(data.motorOpt.direction == FORWARD){
+	motorInternalData aux;
+	aux.motorOpt.direction = STOPEDHARD;
+	aux.motorOpt.channel = motorRID;
+	motorDirectionInternal(aux);
+	//vTaskDelay(10);
+      }
       HAL_GPIO_WritePin(ph_1A_GPIO_Port,ph_1A_Pin,GPIO_PIN_RESET);
       HAL_GPIO_WritePin(ph_1B_GPIO_Port,ph_1B_Pin,GPIO_PIN_SET);
     }else if(data.motorOpt.channel == motorLID){
+      if(data.motorOpt.direction == FORWARD){
+	motorInternalData aux;
+	aux.motorOpt.direction = STOPEDHARD;
+	aux.motorOpt.channel = motorLID;
+	motorDirectionInternal(aux);
+	//vTaskDelay(10);
+      }
       HAL_GPIO_WritePin(ph_2A_GPIO_Port,ph_2A_Pin,GPIO_PIN_RESET);
       HAL_GPIO_WritePin(ph_2B_GPIO_Port,ph_2B_Pin,GPIO_PIN_SET);
     }
