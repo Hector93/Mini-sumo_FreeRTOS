@@ -41,7 +41,7 @@ void sensorsDist(void const* argument){
     /* if(pdPASS == (xQueueReceive(sensorsDistQueueHandle,&rx,0))){ */
     /*   SensorDistProcessMessage(rx); */
     /* } */
-    if(pdPASS == (xSemaphoreTake(irdistHandle,portMAX_DELAY))){
+    if(pdPASS == (xSemaphoreTake(irdistHandle,10))){
       //procesar la informacion antes de volver a leer el adc
       //processAdc();
       //rx = createMessage(sensorsDistID, miniId, DIRECTION, findOponent());
