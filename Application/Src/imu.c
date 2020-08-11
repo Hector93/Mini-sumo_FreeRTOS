@@ -967,7 +967,7 @@ void imu(void const * argument){
      */
     //handle_input(rx.messageUser.type);
     // }
-    if(pdTRUE == xSemaphoreTake(imuSemHandle, portMAX_DELAY)){
+    if(pdTRUE == xSemaphoreTake(imuSemHandle, pdMS_TO_TICKS(250))){
       if(imuInvProcessData()){
 	/* This function reads bias-compensated sensor data and sensor
 	 * fusion outputs from the MPL. The outputs are formatted as seen
@@ -990,8 +990,8 @@ void imu(void const * argument){
 	message tx = createMessage(imuId, miniId, HEADING, 0);
 	xQueueSend(miniQueueHandle, &tx, 10);
       }
-      //taskYIELD();
-      //vTaskDelay(100);
+    }else{
+      xSemaphoreGive(imuSemHandle);
     }
   }
 }
@@ -1002,7 +1002,9 @@ uint8_t Sensors_I2C_WriteRegister(unsigned char slave_addr, unsigned char reg_ad
     uint8_t res = (HAL_OK == HAL_I2C_Mem_Write(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 1000) ? 0 : 1);
     return res;
   }
-  xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
+  while(pdPASS != xSemaphoreTake(i2cSemHandle, pdMS_TO_TICKS(50))){
+    xSemaphoreGive(i2cSemHandle);
+  }
   uint8_t res = (HAL_OK == HAL_I2C_Mem_Write(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 1000) ? 0 : 1);
   xSemaphoreGive(i2cSemHandle);
   return res;
@@ -1013,8 +1015,9 @@ uint8_t Sensors_I2C_ReadRegister(unsigned char slave_addr, unsigned char reg_add
     uint8_t res = (HAL_OK == HAL_I2C_Mem_Read(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 1000)? 0 : 1);
     return res;
   }
-  xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
-  uint8_t res = (HAL_OK == HAL_I2C_Mem_Read(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 1000)? 0 : 1);
+  while(pdPASS != xSemaphoreTake(i2cSemHandle, pdMS_TO_TICKS(200))){
+    xSemaphoreGive(i2cSemHandle);
+  }
   xSemaphoreGive(i2cSemHandle);
   return res;
 }
