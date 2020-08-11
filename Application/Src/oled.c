@@ -43,6 +43,7 @@ void oled(void const * argument){
     u8g2_SetFont(&u8g2, u8g2_font_t0_11_tr);
     do
       {
+	vTaskDelay(pdMS_TO_TICKS(35));
 	if(status.heading < 0){
 	  extern long imuHeadingInternal;
 	  u8g2_DrawFrame(&u8g2, 70, 0, 35, 8);
