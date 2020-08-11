@@ -721,17 +721,18 @@ int mpu_init(struct int_param_s *int_param)
     /* Reset device. */
     data[0] = BIT_RESET;
     i2c_write(st.hw->addr, st.reg->pwr_mgmt_1, 1, data);
-    delay_ms(300);
+    //delay_ms(500);
+    HAL_Delay(500);
     if (i2c_write(st.hw->addr, st.reg->pwr_mgmt_1, 1, data))
-	return -1;
-    delay_ms(100);
-
+      return -1;
+    //delay_ms(900);
+    HAL_Delay(500);
     /* Wake up chip. */
     data[0] = 0x00;
     if (i2c_write(st.hw->addr, st.reg->pwr_mgmt_1, 1, data))
-	return -1;
+      return -1;
 
-   st.chip_cfg.accel_half = 0;
+    st.chip_cfg.accel_half = 0;
 
 #ifdef MPU6500
     /* MPU6500 shares 4kB of memory between the DMP and the FIFO. Since the
