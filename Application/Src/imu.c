@@ -976,7 +976,7 @@ void imu(void const * argument){
 	 */
 	read_from_mpl();
 	if(validations != 0){
-	  if(xTaskGetTickCount() - prevtime > 1000){
+	  if(xTaskGetTickCount() - prevtime > 1500){
 	    prevtime = xTaskGetTickCount();
 	    if(prevHeading == imuHeadingInternal){
 	      validations++;
