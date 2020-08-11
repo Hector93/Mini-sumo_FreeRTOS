@@ -1012,12 +1012,13 @@ uint8_t Sensors_I2C_WriteRegister(unsigned char slave_addr, unsigned char reg_ad
 
 uint8_t Sensors_I2C_ReadRegister(unsigned char slave_addr, unsigned char reg_addr, unsigned char length, unsigned char *data){
   if(init){
-    uint8_t res = (HAL_OK == HAL_I2C_Mem_Read(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 1000)? 0 : 1);
+    uint8_t res = (HAL_OK == HAL_I2C_Mem_Read(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 2000)? 0 : 1);
     return res;
   }
   while(pdPASS != xSemaphoreTake(i2cSemHandle, pdMS_TO_TICKS(200))){
     xSemaphoreGive(i2cSemHandle);
   }
+  uint8_t res = (HAL_OK == HAL_I2C_Mem_Read(&hi2c1,slave_addr << 1,reg_addr,sizeof(uint8_t),data,length, 2000)? 0 : 1);
   xSemaphoreGive(i2cSemHandle);
   return res;
 }
