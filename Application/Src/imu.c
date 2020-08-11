@@ -948,17 +948,14 @@ void imu(void const * argument){
   uint32_t prevtime;
   long prevHeading = imuHeadingInternal;
   int8_t validations = -3;
-  //xSemaphoreGive(imuSemHandle);
-  //int res = imuInit();
-  //while(1){vTaskDelay(1000);}
+  xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
   taskENTER_CRITICAL();
-  HAL_Delay(300);
   if(imuInit() < 0){
     MPL_LOGE("Could not initialize IMU.\r\n");
-    //while(1);
   }
   taskEXIT_CRITICAL();
   init = 0;
+  xSemaphoreGive(i2cSemHandle);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
   //while(1);
   prevtime = xTaskGetTickCount();
