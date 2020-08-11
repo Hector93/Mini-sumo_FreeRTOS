@@ -1020,16 +1020,8 @@ uint8_t Sensors_I2C_ReadRegister(unsigned char slave_addr, unsigned char reg_add
 }
 
 
-void HAL_I2C_ErrorCallback(I2C_HandleTypeDef* hi2c){
-  UNUSED(hi2c);
-  while(1){
-
-  }
-}
-
 void mdelay(unsigned long nTime){
-  HAL_Delay(nTime);
-  //vTaskDelay(pdMS_TO_TICKS(nTime));
+  vTaskDelay(pdMS_TO_TICKS(nTime));
 }
 
 uint32_t get_tick_count(){
