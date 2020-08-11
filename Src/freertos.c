@@ -275,7 +275,7 @@ void MX_FREERTOS_Init(void) {
   sensorDistHandle = osThreadCreate(osThread(sensorDist), NULL);
 
   /* definition and creation of acelerometro */
-  osThreadDef(acelerometro, imu, osPriorityAboveNormal, 0, 256);
+  osThreadDef(acelerometro, imu, osPriorityAboveNormal, 0, 512);
   acelerometroHandle = osThreadCreate(osThread(acelerometro), NULL);
 
   /* definition and creation of minisumo */
