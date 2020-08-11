@@ -25,12 +25,10 @@ uint8_t *bufferDMA;
 
 void oled(void const * argument){
   UNUSED(argument);
-
   extern volatile miniStatus status;
   uint8_t *buf = (uint8_t*)pvPortMalloc(512);
   buffer = (uint8_t*)pvPortMalloc(32);
   bufferDMA = (uint8_t*)pvPortMalloc(32);
-  //while(1){vTaskDelay(1000);}
   u8g2_Setup_ssd1306_i2c_128x32_univision_f(&u8g2, U8G2_R2, u8x8_byte_stm32_hw_i2c, u8x8_stm32_gpio_and_delay);
   u8g2_SetBufferPtr(&u8g2, buf);
   u8g2_SetI2CAddress(&u8g2, 0x3c);
@@ -147,6 +145,15 @@ void HAL_I2C_MemTxCpltCallback(I2C_HandleTypeDef *hi2c){
   HAL_I2C_ISR(hi2c);
 }
 
+void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c){
+  I2C_ClearBusyFlagErratum();
+  UNUSED(hi2c);
+  BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+  if(pdPASS == (xSemaphoreGiveFromISR(i2cSemHandle,&xHigherPriorityTaskWoken))){
+    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+  }
+}
+
 
 uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,
 				  U8X8_UNUSED uint8_t msg, U8X8_UNUSED uint8_t arg_int,
@@ -201,7 +208,13 @@ uint8_t u8x8_byte_stm32_hw_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void 
     case U8X8_MSG_BYTE_END_TRANSFER:
       xSemaphoreTake(i2cSemHandle, portMAX_DELAY);
       memcpy(bufferDMA, buffer, 32);
-      res = ( HAL_OK == HAL_I2C_Master_Transmit_IT(&hi2c1, u8x8_GetI2CAddress(u8x8) << 1, bufferDMA, buf_idx) ? 1 : 0);
+      res = HAL_I2C_Master_Transmit_IT(&hi2c1, u8x8_GetI2CAddress(u8x8) << 1, bufferDMA, buf_idx);
+      if(res == HAL_ERROR || res == HAL_BUSY){
+	taskENTER_CRITICAL();
+	I2C_ClearBusyFlagErratum();
+	taskEXIT_CRITICAL();
+      }
+      res = (res == HAL_OK) ? 1 : 0;
       break;
     default:
       return 0;
