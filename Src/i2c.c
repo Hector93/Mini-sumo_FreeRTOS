@@ -82,11 +82,17 @@ void I2C_ClearBusyFlagErratum(void)
   // 3. Check SCL and SDA High level in GPIOx_IDR.
   while (GPIO_PIN_SET != HAL_GPIO_ReadPin(i2c->sclPort, i2c->sclPin))
     {
+      HAL_GPIO_WritePin(i2c->sclPort, i2c->sclPin, GPIO_PIN_SET);
       asm("nop");
     }
 
   while (GPIO_PIN_SET != HAL_GPIO_ReadPin(i2c->sdaPort, i2c->sdaPin))
     {
+      HAL_GPIO_WritePin(i2c->sdaPort, i2c->sdaPin, GPIO_PIN_SET);
+      //Move clock to release I2C
+      HAL_GPIO_WritePin(i2c->sclPort, i2c->sclPin, GPIO_PIN_RESET);
+      asm("nop");
+      HAL_GPIO_WritePin(i2c->sclPort, i2c->sclPin, GPIO_PIN_SET);
       asm("nop");
     }
 
